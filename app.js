@@ -6,7 +6,7 @@
 const ALL_PRODUCTS = [
     {
         id: 1, name: "Crimson Mirrored Lehenga Choli", category: "lehenga",
-        price: 2499, originalPrice: 3999, image: "images/lehenga_red_gold.png",
+        price: 89.97, originalPrice: 143.97, image: "images/lehenga_red_gold.png",
         rating: 4.8, reviews: 312, badge: "Bestseller",
         description: "A stunning red and gold lehenga choli adorned with intricate mirror work embroidery and a golden gota patti border. Perfect for Navratri, weddings, and festive celebrations. Includes blouse and dupatta.",
         sizes: ["XS", "S", "M", "L", "XL", "XXL"], colors: ["Red & Gold"],
@@ -14,7 +14,7 @@ const ALL_PRODUCTS = [
     },
     {
         id: 2, name: "Magenta Rose Bridal Lehenga", category: "lehenga",
-        price: 3299, originalPrice: 5000, image: "images/lehenga_magenta_pink.png",
+        price: 119.97, originalPrice: 179.97, image: "images/lehenga_magenta_pink.png",
         rating: 4.9, reviews: 189, badge: "New",
         description: "A breathtaking magenta pink lehenga choli with heavy silver embroidery, gota patti border, and a gorgeous matching dupatta. Ideal for bridal events and wedding ceremonies.",
         sizes: ["XS", "S", "M", "L", "XL"], colors: ["Magenta & Silver"],
@@ -22,7 +22,7 @@ const ALL_PRODUCTS = [
     },
     {
         id: 3, name: "Mustard Bandhani Ghagra Choli", category: "ghagra",
-        price: 1799, originalPrice: 2800, image: "images/ghagra_mustard_yellow.png",
+        price: 65.97, originalPrice: 101.97, image: "images/ghagra_mustard_yellow.png",
         rating: 4.7, reviews: 425, badge: "Bestseller",
         description: "Vibrant mustard yellow Chaniya Choli with colorful bandhani print, mirror embroidery work, and playful tassel accents. Your perfect Navratri & Garba outfit!",
         sizes: ["S", "M", "L", "XL", "XXL"], colors: ["Mustard Yellow"],
@@ -30,7 +30,7 @@ const ALL_PRODUCTS = [
     },
     {
         id: 4, name: "Royal Blue Peacock Lehenga", category: "lehenga",
-        price: 2899, originalPrice: 4500, image: "images/lehenga_royal_blue.png",
+        price: 104.97, originalPrice: 164.97, image: "images/lehenga_royal_blue.png",
         rating: 4.6, reviews: 143, badge: "Sale",
         description: "Elegant royal blue lehenga choli with exquisite zari embroidery, sequin work, and beautiful peacock motifs. A timeless piece for weddings and grand festivals.",
         sizes: ["XS", "S", "M", "L", "XL"], colors: ["Royal Blue & Gold"],
@@ -38,7 +38,7 @@ const ALL_PRODUCTS = [
     },
     {
         id: 5, name: "Lime Green Garba Chaniya Choli", category: "ghagra",
-        price: 1599, originalPrice: 2499, image: "images/green_lehenga_choli.png",
+        price: 59.97, originalPrice: 89.97, image: "images/green_lehenga_choli.png",
         rating: 4.5, reviews: 267, badge: "New",
         description: "Beautiful lime green Chaniya Choli with bandhani print, mirror embroidery, and a matching chunri dupatta. Dance your heart out this Navratri in style!",
         sizes: ["S", "M", "L", "XL", "XXL"], colors: ["Lime Green & Red"],
@@ -46,7 +46,7 @@ const ALL_PRODUCTS = [
     },
     {
         id: 6, name: "Kundan Meenakari Gold Set", category: "jewelry",
-        price: 1299, originalPrice: 2199, image: "images/jewelry_gold_set.png",
+        price: 47.97, originalPrice: 80.97, image: "images/jewelry_gold_set.png",
         rating: 4.9, reviews: 534, badge: "Bestseller",
         description: "An exquisite traditional Indian gold jewelry set featuring a necklace, earrings, maang tikka, and bangles. Crafted with authentic kundan and meenakari work.",
         sizes: ["One Size"], colors: ["Gold"],
@@ -54,7 +54,7 @@ const ALL_PRODUCTS = [
     },
     {
         id: 7, name: "Embroidered Ethnic Clutch Purse", category: "purse",
-        price: 799, originalPrice: 1299, image: "images/traditional_purse_clutch.png",
+        price: 29.97, originalPrice: 47.97, image: "images/traditional_purse_clutch.png",
         rating: 4.6, reviews: 289, badge: "Sale",
         description: "Gorgeous traditional ethnic clutch purse with hand-embroidery, mirror work, and sequin accents in vibrant maroon and gold. The perfect festive accessory!",
         sizes: ["One Size"], colors: ["Maroon & Gold"],
@@ -62,7 +62,7 @@ const ALL_PRODUCTS = [
     },
     {
         id: 8, name: "Golden Ethnic Ladies Watch", category: "watch",
-        price: 1499, originalPrice: 2499, image: "images/traditional_watch_ladies.png",
+        price: 53.97, originalPrice: 89.97, image: "images/traditional_watch_ladies.png",
         rating: 4.4, reviews: 98, badge: "New",
         description: "An elegant ladies' traditional Indian style watch featuring a golden bracelet band, ethnic motif dial with colorful enamel work, and a beautiful floral design. Timeless fashion meets tradition.",
         sizes: ["One Size"], colors: ["Gold"],
@@ -71,7 +71,7 @@ const ALL_PRODUCTS = [
     // Additional products (use gradient placeholders with emoji)
     {
         id: 9, name: "Bandhani Silk Dupatta", category: "dupatta",
-        price: 699, originalPrice: 1099, image: null, emoji: "🧣", color: "#8e44ad",
+        price: 26.97, originalPrice: 38.97, image: null, emoji: "🧣", color: "#8e44ad",
         rating: 4.5, reviews: 178, badge: "New",
         description: "A vibrant Bandhani silk dupatta with rich traditional print and decorative golden border. Pairs beautifully with any ethnic outfit.",
         sizes: ["One Size"], colors: ["Purple", "Red", "Green"],
@@ -79,7 +79,7 @@ const ALL_PRODUCTS = [
     },
     {
         id: 10, name: "Silver Oxidized Jhumka Set", category: "jewelry",
-        price: 499, originalPrice: 799, image: null, emoji: "💍", color: "#7f8c8d",
+        price: 17.97, originalPrice: 29.97, image: null, emoji: "💍", color: "#7f8c8d",
         rating: 4.7, reviews: 612, badge: "Bestseller",
         description: "Classic silver oxidized jhumka earrings with traditional floral motif. A wardrobe essential for every ethnic look.",
         sizes: ["One Size"], colors: ["Silver"],
@@ -87,7 +87,7 @@ const ALL_PRODUCTS = [
     },
     {
         id: 11, name: "Floral Zardosi Anarkali Suit", category: "lehenga",
-        price: 2199, originalPrice: 3499, image: null, emoji: "👗", color: "#e74c3c",
+        price: 80.97, originalPrice: 125.97, image: null, emoji: "👗", color: "#e74c3c",
         rating: 4.6, reviews: 156, badge: "New",
         description: "Elegant floral Zardosi embroidered Anarkali suit in rich fabric. Perfect for festive gatherings and family celebrations.",
         sizes: ["XS", "S", "M", "L", "XL"], colors: ["Red", "Teal"],
@@ -95,7 +95,7 @@ const ALL_PRODUCTS = [
     },
     {
         id: 12, name: "Navratri Special Chaniya Set", category: "ghagra",
-        price: 1299, originalPrice: 1999, image: null, emoji: "🌸", color: "#e67e22",
+        price: 47.97, originalPrice: 71.97, image: null, emoji: "🌸", color: "#e67e22",
         rating: 4.4, reviews: 321, badge: "Sale",
         description: "Colorful Navratri special Chaniya Choli with multicolor bandhani print and mirror embroidery. Light and comfortable for long hours of Garba.",
         sizes: ["S", "M", "L", "XL"], colors: ["Multicolor"],
@@ -210,8 +210,8 @@ function buildProductCard(p, index) {
           <span class="rating-count">(${p.reviews})</span>
         </div>
         <div class="product-price">
-          <span class="price-current">₹${p.price.toLocaleString('en-IN')}</span>
-          <span class="price-original">₹${p.originalPrice.toLocaleString('en-IN')}</span>
+          <span class="price-current">$${p.price.toFixed(2)}</span>
+          <span class="price-original">$${p.originalPrice.toFixed(2)}</span>
           <span class="price-discount">${p.discount}% OFF</span>
         </div>
         <button class="add-to-cart" onclick="event.stopPropagation(); quickAddToCart(${p.id})">Add to Cart 🛍</button>
@@ -263,8 +263,8 @@ function openProductModal(id) {
           <span style="color:var(--text-muted)">${p.rating} (${p.reviews} reviews)</span>
         </div>
         <div class="modal-price">
-          <span class="modal-price-current">₹${p.price.toLocaleString('en-IN')}</span>
-          <span class="modal-price-original">₹${p.originalPrice.toLocaleString('en-IN')}</span>
+          <span class="modal-price-current">$${p.price.toFixed(2)}</span>
+          <span class="modal-price-original">$${p.originalPrice.toFixed(2)}</span>
           <span class="price-discount" style="font-size:0.85rem">${p.discount}% OFF</span>
         </div>
         <p class="modal-desc">${p.description}</p>
@@ -374,7 +374,7 @@ function updateCartUI() {
         cartEmpty.style.display = 'none';
         cartFooter.style.display = 'flex';
         const total = cart.reduce((sum, c) => sum + c.price * c.qty, 0);
-        document.getElementById('cart-total-amount').textContent = '₹' + total.toLocaleString('en-IN');
+        document.getElementById('cart-total-amount').textContent = '$' + total.toFixed(2);
         cartItems.innerHTML = cart.map(item => `
       <div class="cart-item">
         ${item.image
@@ -382,7 +382,7 @@ function updateCartUI() {
                 : `<div class="cart-item-img" style="background:linear-gradient(135deg,${item.color}22,${item.color}44);display:flex;align-items:center;justify-content:center;font-size:2rem">${item.emoji}</div>`}
         <div class="cart-item-info">
           <div class="cart-item-name">${item.name}</div>
-          <div class="cart-item-price">₹${item.price.toLocaleString('en-IN')}</div>
+          <div class="cart-item-price">$${item.price.toFixed(2)}</div>
           <div class="cart-item-controls">
             <button class="qty-btn" onclick="changeQty(${item.id}, -1)">−</button>
             <span class="qty-num">${item.qty}</span>
@@ -425,7 +425,7 @@ function updateWishlistUI() {
                 : `<div class="cart-item-img" style="background:linear-gradient(135deg,${p.color}22,${p.color}44);display:flex;align-items:center;justify-content:center;font-size:2rem">${p.emoji}</div>`}
         <div class="cart-item-info">
           <div class="cart-item-name">${p.name}</div>
-          <div class="cart-item-price">₹${p.price.toLocaleString('en-IN')}</div>
+          <div class="cart-item-price">$${p.price.toFixed(2)}</div>
           <div class="cart-item-controls">
             <button class="qty-btn" onclick="addToCart(${p.id}); closeAll(); setTimeout(openCart, 200)">Add to Cart</button>
             <button class="cart-item-remove" onclick="toggleWishlist(${p.id})">Remove ✕</button>
