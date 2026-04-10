@@ -4,602 +4,206 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Ethnic Elegance – Traditional Indian Wear & Accessories for Girls</title>
-  <meta name="description"
-    content="Ethnic Elegance – Shop stunning Lehenga Cholis, Ghagras, Dupattas, and traditional accessories including jewelry, purses & watches for Navratri, weddings, and festive celebrations." />
+  <title>Ethnic Elegance | Modern Tradition for the Modern Woman</title>
+  <meta name="description" content="Premium handcrafted Indian traditional wear including Lehengas, Ghagras, and Heritage Jewelry." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Poppins:wght@300;400;500;600;700&family=Dancing+Script:wght@600&display=swap"
-    rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
 
+  <!-- ========== TOP UTILITY BAR ========== -->
+  <div class="top-bar">
+    <div class="container top-bar-inner">
+      <div class="top-bar-left">
+        <span>✨ Handcrafted Tradition, Modern Elegance</span>
+      </div>
+      <div class="top-bar-right">
+        <a href="contact.html">Support</a>
+        <a href="#">Track Order</a>
+        <div class="currency-selector">
+          <span>USD ($)</span>
+          <svg width="10" height="6" viewBox="0 0 10 6" fill="none"><path d="M1 1l4 4 4-4" stroke="currentColor" stroke-width="1.5"/></svg>
+        </div>
+      </div>
+    </div>
+  </div>
+
   <!-- ========== ANNOUNCEMENT BAR ========== -->
   <div class="announcement-bar" id="announcement-bar">
     <div class="announcement-track">
-      <span>🌸 Free Shipping on Orders Above $12 &nbsp;|&nbsp; 🎉 Navratri Special Collection Now Live! &nbsp;|&nbsp; 💎
-        10% OFF on Your First Order – Use Code: ETHNIC10 &nbsp;|&nbsp; 🌸 Free Shipping on Orders Above $12
-        &nbsp;|&nbsp; 🎉 Navratri Special Collection Now Live! &nbsp;|&nbsp; 💎 10% OFF on Your First Order – Use Code:
-        ETHNIC10</span>
+      <span>🌸 FREE SHIPPING ON ORDERS ABOVE $12 &nbsp;|&nbsp; 🎉 NEW COLLECTION NOW LIVE! &nbsp;|&nbsp; 💎 USE CODE: ETHNIC10</span>
+      <span>🌸 FREE SHIPPING ON ORDERS ABOVE $12 &nbsp;|&nbsp; 🎉 NEW COLLECTION NOW LIVE! &nbsp;|&nbsp; 💎 USE CODE: ETHNIC10</span>
     </div>
   </div>
 
   <!-- ========== NAVBAR ========== -->
   <header class="navbar" id="navbar">
-    <div class="nav-inner">
-      <div class="nav-logo">
-        <span class="logo-icon">✦</span>
+    <div class="nav-inner container">
+      <div class="nav-logo" onclick="location.href='index.html'">
         <div class="logo-text">
-          <span class="logo-main">Ethnic</span><span class="logo-accent">Elegance</span>
-          <span class="logo-tagline">Traditional Wear & Accessories</span>
+          <span class="logo-main">ETHNIC</span>
+          <span class="logo-accent">ELEGANCE</span>
         </div>
       </div>
-      <nav class="nav-links" id="nav-links">
-        <a href="#home" class="nav-link active" onclick="scrollToSection('home')">Home</a>
-        <a href="#categories" class="nav-link" onclick="scrollToSection('categories')">Collections</a>
-        <a href="#products" class="nav-link" onclick="scrollToSection('products')">Shop</a>
-        <a href="#about" class="nav-link" onclick="scrollToSection('about')">About Us</a>
-        <a href="#contact" class="nav-link" onclick="scrollToSection('contact')">Contact</a>
+
+      <nav class="nav-links">
+        <a href="index.html" class="nav-link active">Home</a>
+        <a href="shop.html" class="nav-link">Shop</a>
+        <a href="about.html" class="nav-link">Our Story</a>
+        <a href="contact.html" class="nav-link">Contact</a>
       </nav>
+
       <div class="nav-actions">
-        <button class="nav-btn search-btn" id="search-toggle" title="Search">
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-            <circle cx="11" cy="11" r="8" />
-            <path d="m21 21-4.35-4.35" />
-          </svg>
+        <button class="nav-btn" id="search-toggle" title="Search">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
         </button>
-        <button class="nav-btn wishlist-btn" id="wishlist-toggle" title="Wishlist">
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-            <path
-              d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z" />
-          </svg>
+        <button class="nav-btn" id="wishlist-toggle" title="Wishlist">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
           <span class="badge" id="wishlist-count">0</span>
         </button>
-        <button class="nav-btn cart-btn" id="cart-toggle" title="Cart">
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-            <path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z" />
-            <line x1="3" y1="6" x2="21" y2="6" />
-            <path d="M16 10a4 4 0 0 1-8 0" />
-          </svg>
+        <button class="nav-btn" id="cart-toggle" title="Cart">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>
           <span class="badge" id="cart-count">0</span>
         </button>
-        <button class="hamburger" id="hamburger">
-          <span></span><span></span><span></span>
-        </button>
-      </div>
-    </div>
-    <!-- Search Bar -->
-    <div class="search-overlay" id="search-overlay">
-      <div class="search-box">
-        <input type="text" id="search-input" placeholder="Search lehengas, jewelry, accessories…" />
-        <button onclick="performSearch()" class="search-submit">Search</button>
-        <button onclick="closeSearch()" class="search-close">✕</button>
+        <button class="hamburger" id="hamburger"><span></span><span></span><span></span></button>
       </div>
     </div>
   </header>
 
   <!-- ========== HERO SECTION ========== -->
   <section class="hero" id="home">
-    <div class="hero-bg"></div>
-    <div class="hero-particles" id="hero-particles"></div>
-    <div class="hero-content">
-      <div class="hero-badge">✦ New Navratri Collection 2025 ✦</div>
-      <h1 class="hero-title">
-        Celebrate the Beauty of
-        <span class="gradient-text">Indian Tradition</span>
-      </h1>
-      <p class="hero-subtitle">Exquisite Lehenga Cholis, Ghagras, and Accessories crafted for festive celebrations,
-        weddings, and cultural events</p>
-      <div class="hero-cta">
-        <button class="btn-primary" onclick="scrollToSection('products')">
-          <span>Shop the Collection</span>
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-            <path d="M5 12h14M12 5l7 7-7 7" />
-          </svg>
-        </button>
-        <button class="btn-secondary" onclick="scrollToSection('categories')">
-          Explore Categories
-        </button>
-      </div>
-      <div class="hero-stats">
-        <div class="stat"><span class="stat-num">500+</span><span class="stat-label">Designs</span></div>
-        <div class="stat-divider"></div>
-        <div class="stat"><span class="stat-num">10K+</span><span class="stat-label">Happy Customers</span></div>
-        <div class="stat-divider"></div>
-        <div class="stat"><span class="stat-num">4.9★</span><span class="stat-label">Rating</span></div>
-      </div>
+    <div class="hero-bg">
+      <img src="images/hero-banner.png" alt="Ethnic Elegance Heritage Collection" class="hero-img">
     </div>
-    <div class="hero-scroll-indicator">
-      <span>Scroll to Explore</span>
-      <div class="scroll-arrow"></div>
+    <div class="hero-overlay"></div>
+    <div class="hero-particles" id="hero-particles"></div>
+    <div class="container hero-container">
+      <div class="hero-content">
+        <span class="hero-tag">Heritage Collection 2026</span>
+        <h1 class="hero-title">Timeless Tradition, <br><span>Modern Elegance.</span></h1>
+        <p class="hero-desc">Discover our curated collection of artisanal lehengas, ghagras, and accessories handcrafted for the most memorable moments.</p>
+        <div class="hero-cta">
+          <a href="shop.html" class="btn-primary">Shop Collection</a>
+          <a href="about.html" class="btn-secondary">Our Story</a>
+        </div>
+      </div>
     </div>
   </section>
 
-  <!-- ========== CATEGORIES ========== -->
-  <section class="categories-section" id="categories">
+  <!-- ========== TRUST BAR ========== -->
+  <section class="trust-bar">
+    <div class="container trust-bar-inner">
+      <div class="trust-item">
+        <div class="trust-icon">✈️</div>
+        <div class="trust-text"><h4>Global Shipping</h4><p>Delivery from India</p></div>
+      </div>
+      <div class="trust-item">
+        <div class="trust-icon">✨</div>
+        <div class="trust-text"><h4>Artisanal Quality</h4><p>Hand-selected fabrics</p></div>
+      </div>
+      <div class="trust-item">
+        <div class="trust-icon">🛡️</div>
+        <div class="trust-text"><h4>Secure Shop</h4><p>SSL Encrypted</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== CATEGORY HIGHLIGHTS ========== -->
+  <section class="categories-section" id="categories" style="padding: 80px 0;">
     <div class="container">
-      <div class="section-header">
-        <span class="section-tag">Our Collections</span>
-        <h2 class="section-title">Shop by Category</h2>
-        <p class="section-desc">From festive lehengas to stunning accessories, find everything traditional</p>
+      <div class="section-header text-center">
+        <span class="section-tag">Curated Picks</span>
+        <h2 class="section-title">Shop our Favorites</h2>
       </div>
       <div class="categories-grid">
-        <div class="category-card" onclick="filterByCategory('lehenga')" id="cat-lehenga">
-          <div class="cat-icon">👗</div>
-          <div class="cat-content">
-            <h3>Lehenga Choli</h3>
-            <p>Festive & Wedding Collections</p>
-            <span class="cat-count">85 Items</span>
-          </div>
-          <div class="cat-arrow">→</div>
-          <div class="cat-bg-decor"></div>
+        <div class="category-card" onclick="location.href='shop.html?cat=lehenga'">
+          <div class="category-img"><img src="images/WhatsApp Image 2026-04-08 at 12.58.32 PM.jpeg" alt="Lehengas"></div>
+          <div class="category-overlay"><h3>Lehenga Choli</h3></div>
         </div>
-        <div class="category-card" onclick="filterByCategory('ghagra')" id="cat-ghagra">
-          <div class="cat-icon">🌸</div>
-          <div class="cat-content">
-            <h3>Ghagra / Chaniya</h3>
-            <p>Navratri & Garba Specials</p>
-            <span class="cat-count">62 Items</span>
-          </div>
-          <div class="cat-arrow">→</div>
-          <div class="cat-bg-decor"></div>
-        </div>
-        <div class="category-card" onclick="filterByCategory('dupatta')" id="cat-dupatta">
-          <div class="cat-icon">🧣</div>
-          <div class="cat-content">
-            <h3>Dupatta & Stoles</h3>
-            <p>Bandhani & Block Print</p>
-            <span class="cat-count">48 Items</span>
-          </div>
-          <div class="cat-arrow">→</div>
-          <div class="cat-bg-decor"></div>
-        </div>
-        <div class="category-card" onclick="filterByCategory('jewelry')" id="cat-jewelry">
-          <div class="cat-icon">💎</div>
-          <div class="cat-content">
-            <h3>Jewelry</h3>
-            <p>Kundan, Meenakari & Gold</p>
-            <span class="cat-count">120 Items</span>
-          </div>
-          <div class="cat-arrow">→</div>
-          <div class="cat-bg-decor"></div>
-        </div>
-        <div class="category-card" onclick="filterByCategory('purse')" id="cat-purse">
-          <div class="cat-icon">👛</div>
-          <div class="cat-content">
-            <h3>Purses & Clutches</h3>
-            <p>Embroidered & Sequin Work</p>
-            <span class="cat-count">45 Items</span>
-          </div>
-          <div class="cat-arrow">→</div>
-          <div class="cat-bg-decor"></div>
-        </div>
-        <div class="category-card" onclick="filterByCategory('watch')" id="cat-watch">
-          <div class="cat-icon">⌚</div>
-          <div class="cat-content">
-            <h3>Ethnic Watches</h3>
-            <p>Traditional & Festive Styles</p>
-            <span class="cat-count">30 Items</span>
-          </div>
-          <div class="cat-arrow">→</div>
-          <div class="cat-bg-decor"></div>
+        <div class="category-card" onclick="location.href='shop.html?cat=jewelry'">
+          <div class="category-img"><img src="images/WhatsApp Image 2026-04-08 at 12.58.57 PM.jpeg" alt="Jewelry"></div>
+          <div class="category-overlay"><h3>Heritage Jewelry</h3></div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- ========== FEATURED BANNER ========== -->
-  <section class="featured-banner">
-    <div class="banner-content">
-      <p class="banner-tag">Limited Time Offer</p>
-      <h2>Navratri Special: <span>Flat 20% OFF</span> on All Garba Outfits!</h2>
-      <p class="banner-sub">Use code <strong>GARBA20</strong> at checkout • Offer valid till stocks last</p>
-      <button class="btn-primary" onclick="filterByCategory('ghagra')">Shop Now →</button>
-    </div>
-  </section>
-
-  <!-- ========== PRODUCTS SECTION ========== -->
-  <section class="products-section" id="products">
+  <!-- ========== BEST SELLERS GRID ========== -->
+  <section class="products-section" id="products" style="padding: 80px 0; background: var(--bg-alt);">
     <div class="container">
-      <div class="section-header">
-        <span class="section-tag">Our Store</span>
-        <h2 class="section-title">Featured Products</h2>
-        <p class="section-desc">Handpicked pieces inspired by India's rich cultural heritage</p>
+      <div class="section-header text-center">
+        <span class="section-tag">Best Sellers</span>
+        <h2 class="section-title">Trending Post-Navratri</h2>
       </div>
-
-      <!-- Filter Bar -->
-      <div class="filter-bar">
-        <button class="filter-btn active" id="filter-all" onclick="filterByCategory('all')">All Items</button>
-        <button class="filter-btn" id="filter-lehenga" onclick="filterByCategory('lehenga')">Lehenga</button>
-        <button class="filter-btn" id="filter-ghagra" onclick="filterByCategory('ghagra')">Ghagra</button>
-        <button class="filter-btn" id="filter-dupatta" onclick="filterByCategory('dupatta')">Dupatta</button>
-        <button class="filter-btn" id="filter-jewelry" onclick="filterByCategory('jewelry')">Jewelry</button>
-        <button class="filter-btn" id="filter-purse" onclick="filterByCategory('purse')">Purses</button>
-        <button class="filter-btn" id="filter-watch" onclick="filterByCategory('watch')">Watches</button>
-      </div>
-
-      <!-- Products Grid -->
       <div class="products-grid" id="products-grid">
-        <!-- Populated by JS -->
+        <!-- JS Populated (Will only show first few) -->
       </div>
-
-      <div class="load-more-wrap">
-        <button class="btn-outline" id="load-more-btn" onclick="loadMoreProducts()">Load More Products</button>
-      </div>
-    </div>
-  </section>
-
-  <!-- ========== WHY CHOOSE US ========== -->
-  <section class="features-section">
-    <div class="container">
-      <div class="features-grid">
-        <div class="feature-card">
-          <div class="feature-icon">🚚</div>
-          <h4>Free Shipping</h4>
-          <p>On all orders above ₹999. Fast delivery across India</p>
-        </div>
-        <div class="feature-card">
-          <div class="feature-icon">💯</div>
-          <h4>100% Authentic</h4>
-          <p>Genuine handcrafted traditional wear sourced directly</p>
-        </div>
-        <div class="feature-card">
-          <div class="feature-icon">🔄</div>
-          <h4>Easy Returns</h4>
-          <p>7-day hassle-free return and exchange policy</p>
-        </div>
-        <div class="feature-card">
-          <div class="feature-icon">🔒</div>
-          <h4>Secure Payment</h4>
-          <p>100% safe & encrypted payment gateway</p>
-        </div>
+      <div class="text-center" style="margin-top: 40px;">
+        <a href="shop.html" class="btn-outline">View Full Catalog →</a>
       </div>
     </div>
   </section>
 
-  <!-- ========== TESTIMONIALS ========== -->
-  <section class="testimonials-section" id="about">
+  <!-- ========== REFINED FOOTER ========== -->
+  <footer class="footer">
     <div class="container">
-      <div class="section-header">
-        <span class="section-tag">Customer Love</span>
-        <h2 class="section-title">What Our Customers Say</h2>
-      </div>
-      <div class="testimonials-slider" id="testimonials-slider">
-        <div class="testimonial-card active">
-          <div class="testimonial-stars">★★★★★</div>
-          <p>"The red lehenga I ordered for Navratri was absolutely stunning! The fabric quality is amazing and delivery
-            was super fast. Will definitely order again!"</p>
-          <div class="testimonial-author">
-            <div class="author-avatar">P</div>
-            <div><strong>Priya Shah</strong><span>Ahmedabad, Gujarat</span></div>
+      <div class="footer-top">
+        <div class="footer-brand-col">
+          <div class="footer-logo"><span class="logo-main">ETHNIC</span><span class="logo-accent">ELEGANCE</span></div>
+          <p class="footer-about">Preserving the rich heritage of Indian textiles through handcrafted elegance.</p>
+        </div>
+        <div class="footer-links-group">
+          <div class="footer-col">
+            <h4>Shop</h4>
+            <ul>
+              <li><a href="shop.html">Full Collection</a></li>
+              <li><a href="shop.html?cat=lehenga">Lehenga Choli</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Support</h4>
+            <ul>
+              <li><a href="about.html">Our Story</a></li>
+              <li><a href="contact.html">Contact Us</a></li>
+            </ul>
           </div>
         </div>
-        <div class="testimonial-card">
-          <div class="testimonial-stars">★★★★★</div>
-          <p>"Bought the gold jewelry set for my daughter's wedding. Everyone was complimenting her look! The meenakari
-            work is extraordinary. Highly recommend!"</p>
-          <div class="testimonial-author">
-            <div class="author-avatar">R</div>
-            <div><strong>Rekha Patel</strong><span>Surat, Gujarat</span></div>
-          </div>
-        </div>
-        <div class="testimonial-card">
-          <div class="testimonial-stars">★★★★☆</div>
-          <p>"Beautiful collection at great prices! The mustard ghagra choli is exactly what I was looking for. Colors
-            are vibrant exactly as shown in the photos."</p>
-          <div class="testimonial-author">
-            <div class="author-avatar">A</div>
-            <div><strong>Anjali Mehta</strong><span>Mumbai, Maharashtra</span></div>
-          </div>
-        </div>
-        <div class="testimonial-card">
-          <div class="testimonial-stars">★★★★★</div>
-          <p>"The ethnic clutch purse is gorgeous! Perfect with my lehenga for the wedding. Superb embroidery and
-            excellent quality for the price. 10 out of 10!"</p>
-          <div class="testimonial-author">
-            <div class="author-avatar">D</div>
-            <div><strong>Deepika Sharma</strong><span>Jaipur, Rajasthan</span></div>
-          </div>
-        </div>
-      </div>
-      <div class="slider-controls">
-        <button class="slider-btn" id="prev-btn" onclick="changeTestimonial(-1)">‹</button>
-        <div class="slider-dots" id="slider-dots"></div>
-        <button class="slider-btn" id="next-btn" onclick="changeTestimonial(1)">›</button>
-      </div>
-    </div>
-  </section>
-
-  <!-- ========== ABOUT SECTION ========== -->
-  <section class="about-section">
-    <div class="container">
-      <div class="about-grid">
-        <div class="about-text">
-          <span class="section-tag">Our Story</span>
-          <h2 class="section-title">Embracing the Grace of Indian Heritage</h2>
-          <p>At <strong>Ethnic Elegance</strong>, we believe that traditional Indian clothing is not just a garment –
-            it's a celebration of culture, artistry, and identity. Every piece we offer is carefully handpicked to bring
-            the best of India's vibrant traditions to you.</p>
-          <p>From Garba outfits for Navratri to bridal lehengas for weddings, we cater to every festive occasion with a
-            curated selection of ethenic wear and accessories that blend tradition with style.</p>
-          <div class="about-highlights">
-            <div class="highlight"><span>✦</span> Sourced from Premier Artisans</div>
-            <div class="highlight"><span>✦</span> All-India Delivery Available</div>
-            <div class="highlight"><span>✦</span> Instagram: @ethenic_elegance44</div>
-          </div>
-          <button class="btn-primary" onclick="scrollToSection('contact')">Get in Touch</button>
-        </div>
-        <div class="about-image-grid">
-          <div class="about-img-1"></div>
-          <div class="about-img-2"></div>
-          <div class="about-img-3"></div>
-          <div class="about-badge-overlay">
-            <span class="badge-num">10K+</span>
-            <span class="badge-text">Happy Shoppers</span>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ========== INSTAGRAM FEED ========== -->
-  <section class="instagram-section">
-    <div class="container">
-      <div class="section-header">
-        <span class="section-tag">Follow Us</span>
-        <h2 class="section-title">@ethenic_elegance44</h2>
-        <p class="section-desc">Tag us in your looks for a chance to be featured! <strong>#EthnicElegance</strong></p>
-      </div>
-      <div class="instagram-grid">
-        <div class="insta-item" style="background: linear-gradient(135deg, #c62a47, #ff6b9d)">
-          <div class="insta-overlay"><span>❤ Follow on Instagram</span></div>
-        </div>
-        <div class="insta-item" style="background: linear-gradient(135deg, #8b4513, #daa520)">
-          <div class="insta-overlay"><span>❤ Follow on Instagram</span></div>
-        </div>
-        <div class="insta-item" style="background: linear-gradient(135deg, #154360, #2980b9)">
-          <div class="insta-overlay"><span>❤ Follow on Instagram</span></div>
-        </div>
-        <div class="insta-item" style="background: linear-gradient(135deg, #145a32, #27ae60)">
-          <div class="insta-overlay"><span>❤ Follow on Instagram</span></div>
-        </div>
-        <div class="insta-item" style="background: linear-gradient(135deg, #6c3483, #9b59b6)">
-          <div class="insta-overlay"><span>❤ Follow on Instagram</span></div>
-        </div>
-        <div class="insta-item" style="background: linear-gradient(135deg, #784212, #e67e22)">
-          <div class="insta-overlay"><span>❤ Follow on Instagram</span></div>
-        </div>
-      </div>
-      <div class="text-center">
-        <a href="https://www.instagram.com/ethenic_elegance44/" target="_blank" class="btn-outline insta-link">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
-            <path
-              d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.406-11.845a1.44 1.44 0 1 0 0 2.881 1.44 1.44 0 0 0 0-2.881z" />
-          </svg>
-          Follow @ethenic_elegance44
-        </a>
-      </div>
-    </div>
-  </section>
-
-  <!-- ========== CONTACT SECTION ========== -->
-  <section class="contact-section" id="contact">
-    <div class="container">
-      <div class="contact-grid">
-        <div class="contact-info">
-          <span class="section-tag">Get In Touch</span>
-          <h2 class="section-title">We'd Love to Hear From You</h2>
-          <p>Have questions about sizing, custom orders, or wholesale inquiries? We're here to help!</p>
-          <div class="contact-details">
-            <div class="contact-item">
-              <span class="contact-icon">📱</span>
-              <div>
-                <strong>WhatsApp / Call</strong>
-                <a href="tel:+919876543210">+91 98765 43210</a>
-              </div>
-            </div>
-            <div class="contact-item">
-              <span class="contact-icon">📧</span>
-              <div>
-                <strong>Email</strong>
-                <a href="mailto:hello@ethnicelegance.in">hello@ethnicelegance.in</a>
-              </div>
-            </div>
-            <div class="contact-item">
-              <span class="contact-icon">📸</span>
-              <div>
-                <strong>Instagram</strong>
-                <a href="https://www.instagram.com/ethenic_elegance44/" target="_blank">@ethenic_elegance44</a>
-              </div>
-            </div>
-            <div class="contact-item">
-              <span class="contact-icon">🕐</span>
-              <div>
-                <strong>Business Hours</strong>
-                <span>Mon–Sat, 9AM – 7PM IST</span>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="contact-form-wrap">
-          <form class="contact-form" onsubmit="submitContactForm(event)">
-            <h3>Send Us a Message</h3>
-            <div class="form-row">
-              <div class="form-group">
-                <label for="fname">First Name</label>
-                <input type="text" id="fname" placeholder="Priya" required />
-              </div>
-              <div class="form-group">
-                <label for="lname">Last Name</label>
-                <input type="text" id="lname" placeholder="Shah" required />
-              </div>
-            </div>
-            <div class="form-group">
-              <label for="cemail">Email</label>
-              <input type="email" id="cemail" placeholder="priya@example.com" required />
-            </div>
-            <div class="form-group">
-              <label for="subject">Subject</label>
-              <select id="subject">
-                <option>Product Inquiry</option>
-                <option>Custom Order</option>
-                <option>Wholesale</option>
-                <option>Return/Exchange</option>
-                <option>Other</option>
-              </select>
-            </div>
-            <div class="form-group">
-              <label for="message">Message</label>
-              <textarea id="message" rows="4" placeholder="Tell us how we can help you…" required></textarea>
-            </div>
-            <button type="submit" class="btn-primary full-width">Send Message ✉</button>
+        <div class="footer-newsletter">
+          <h4>Newsletter</h4>
+          <p>Join for exclusive heritage updates.</p>
+          <form class="newsletter-form" onsubmit="event.preventDefault(); showToast('✨ Subscribed!')">
+            <input type="email" placeholder="email@example.com" required>
+            <button type="submit">Join</button>
           </form>
         </div>
       </div>
-    </div>
-  </section>
-
-  <!-- ========== FOOTER ========== -->
-  <footer class="footer">
-    <div class="footer-top">
-      <div class="container">
-        <div class="footer-grid">
-          <div class="footer-brand">
-            <div class="footer-logo">
-              <span class="logo-icon">✦</span>
-              <div class="logo-text">
-                <span class="logo-main">Ethnic</span><span class="logo-accent">Elegance</span>
-              </div>
-            </div>
-            <p>Celebrating India's rich cultural heritage through beautifully crafted traditional wear and accessories
-              for every festive occasion.</p>
-            <div class="social-links">
-              <a href="https://www.instagram.com/ethenic_elegance44/" target="_blank" class="social-link"
-                title="Instagram">
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
-                  <path
-                    d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.406-11.845a1.44 1.44 0 1 0 0 2.881 1.44 1.44 0 0 0 0-2.881z" />
-                </svg>
-              </a>
-              <a href="#" class="social-link" title="Facebook">
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
-                  <path
-                    d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" />
-                </svg>
-              </a>
-              <a href="#" class="social-link" title="Pinterest">
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
-                  <path
-                    d="M12 0C5.373 0 0 5.373 0 12c0 5.084 3.163 9.426 7.627 11.174-.105-.949-.2-2.405.042-3.441.218-.937 1.407-5.965 1.407-5.965s-.359-.719-.359-1.782c0-1.668.967-2.914 2.171-2.914 1.023 0 1.518.769 1.518 1.69 0 1.029-.655 2.568-.994 3.995-.283 1.194.599 2.169 1.777 2.169 2.133 0 3.772-2.249 3.772-5.495 0-2.873-2.064-4.882-5.012-4.882-3.414 0-5.418 2.561-5.418 5.207 0 1.031.397 2.138.893 2.738.098.119.112.224.083.345l-.333 1.36c-.053.22-.174.267-.402.161-1.499-.698-2.436-2.889-2.436-4.649 0-3.785 2.75-7.262 7.929-7.262 4.163 0 7.398 2.967 7.398 6.931 0 4.136-2.607 7.464-6.227 7.464-1.216 0-2.359-.632-2.75-1.378l-.748 2.853c-.271 1.043-1.002 2.35-1.492 3.146C9.57 23.812 10.763 24 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0z" />
-                </svg>
-              </a>
-            </div>
-          </div>
-          <div class="footer-links-col">
-            <h4>Quick Links</h4>
-            <ul>
-              <li><a href="#home" onclick="scrollToSection('home')">Home</a></li>
-              <li><a href="#categories" onclick="scrollToSection('categories')">Collections</a></li>
-              <li><a href="#products" onclick="scrollToSection('products')">Shop All</a></li>
-              <li><a href="#about" onclick="scrollToSection('about')">About Us</a></li>
-              <li><a href="#contact" onclick="scrollToSection('contact')">Contact</a></li>
-            </ul>
-          </div>
-          <div class="footer-links-col">
-            <h4>Categories</h4>
-            <ul>
-              <li><a href="#" onclick="filterByCategory('lehenga')">Lehenga Choli</a></li>
-              <li><a href="#" onclick="filterByCategory('ghagra')">Ghagra / Chaniya</a></li>
-              <li><a href="#" onclick="filterByCategory('dupatta')">Dupatta & Stoles</a></li>
-              <li><a href="#" onclick="filterByCategory('jewelry')">Jewelry</a></li>
-              <li><a href="#" onclick="filterByCategory('purse')">Purses & Clutches</a></li>
-              <li><a href="#" onclick="filterByCategory('watch')">Ethnic Watches</a></li>
-            </ul>
-          </div>
-          <div class="footer-links-col">
-            <h4>Customer Care</h4>
-            <ul>
-              <li><a href="#">Shipping Policy</a></li>
-              <li><a href="#">Return & Exchange</a></li>
-              <li><a href="#">Size Guide</a></li>
-              <li><a href="#">Track Your Order</a></li>
-              <li><a href="#">FAQs</a></li>
-              <li><a href="#">Privacy Policy</a></li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="footer-bottom">
-      <div class="container">
-        <p>© 2025 Ethnic Elegance. All rights reserved. Made with ❤ for lovers of Indian tradition.</p>
-        <div class="payment-icons">
-          <span class="pay-icon">💳 UPI</span>
-          <span class="pay-icon">🏦 Net Banking</span>
-          <span class="pay-icon">💵 COD</span>
-          <span class="pay-icon">📱 PhonePe</span>
-          <span class="pay-icon">🅖 GPay</span>
-        </div>
+      <div class="footer-bottom text-center" style="padding-top:40px; border-top:1px solid rgba(0,0,0,0.05);">
+        <p>&copy; 2026 Ethnic Elegance. All Rights Reserved.</p>
       </div>
     </div>
   </footer>
 
-  <!-- ========== CART DRAWER ========== -->
+  <!-- GLOBAL MODALS & DRAWERS -->
   <div class="overlay" id="overlay" onclick="closeAll()"></div>
   <div class="cart-drawer" id="cart-drawer">
-    <div class="drawer-header">
-      <h3>Your Cart 🛍</h3>
-      <button class="close-drawer" onclick="closeAll()">✕</button>
-    </div>
-    <div class="cart-items" id="cart-items">
-      <div class="cart-empty" id="cart-empty">
-        <span>🛒</span>
-        <p>Your cart is empty</p>
-        <button class="btn-primary" onclick="closeAll()">Start Shopping</button>
-      </div>
-    </div>
-    <div class="cart-footer" id="cart-footer" style="display:none">
-      <div class="cart-total">
-        <span>Total:</span>
-        <span id="cart-total-amount">₹0</span>
-      </div>
-      <button class="btn-primary full-width" onclick="checkout()">Proceed to Checkout →</button>
-      <button class="btn-outline full-width" onclick="closeAll()">Continue Shopping</button>
+    <div class="drawer-header"><h3>Your Cart 🛍</h3><button class="close-drawer" onclick="closeAll()">✕</button></div>
+    <div class="cart-items" id="cart-items"></div>
+    <div class="cart-footer" id="cart-footer">
+      <div class="cart-total"><span>Total:</span><span id="cart-total-amount">$0</span></div>
+      <button class="btn-primary full-width" onclick="checkout()">Checkout</button>
     </div>
   </div>
-
-  <!-- ========== WISHLIST DRAWER ========== -->
   <div class="wishlist-drawer" id="wishlist-drawer">
-    <div class="drawer-header">
-      <h3>Your Wishlist ♥</h3>
-      <button class="close-drawer" onclick="closeAll()">✕</button>
-    </div>
-    <div class="wishlist-items" id="wishlist-items">
-      <div class="cart-empty">
-        <span>♡</span>
-        <p>No items in wishlist yet</p>
-        <button class="btn-primary" onclick="closeAll()">Explore Products</button>
-      </div>
-    </div>
+    <div class="drawer-header"><h3>Your Wishlist ♥</h3><button class="close-drawer" onclick="closeAll()">✕</button></div>
+    <div class="wishlist-items" id="wishlist-items"></div>
   </div>
-
-  <!-- ========== PRODUCT MODAL ========== -->
   <div class="product-modal-overlay" id="product-modal-overlay" onclick="closeProductModal()"></div>
-  <div class="product-modal" id="product-modal">
-    <button class="modal-close" onclick="closeProductModal()">✕</button>
-    <div class="modal-content" id="modal-content"></div>
-  </div>
-
-  <!-- ========== TOAST NOTIFICATION ========== -->
+  <div class="product-modal" id="product-modal"><button class="modal-close" onclick="closeProductModal()">✕</button><div class="modal-content" id="modal-content"></div></div>
   <div class="toast" id="toast"></div>
-
-  <!-- ========== BACK TO TOP ========== -->
-  <button class="back-to-top" id="back-to-top" onclick="window.scrollTo({top:0,behavior:'smooth'})">↑</button>
 
   <script src="app.js"></script>
 </body>
-
 </html>

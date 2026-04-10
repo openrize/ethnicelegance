@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Shop – Ethnic Elegance | Traditional Indian Wear</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- HEADER (Same as index) -->
+  <header class="navbar sticky" id="navbar">
+    <div class="nav-inner container">
+      <div class="nav-logo" onclick="location.href='index.html'">
+        <div class="logo-text">
+          <span class="logo-main">ETHNIC</span>
+          <span class="logo-accent">ELEGANCE</span>
+        </div>
+      </div>
+      <nav class="nav-links">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="shop.html" class="nav-link active">Shop</a>
+        <a href="about.html" class="nav-link">Our Story</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </nav>
+      <div class="nav-actions">
+        <button class="nav-btn" id="search-toggle"><svg width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg></button>
+        <button class="nav-btn" id="wishlist-toggle"><svg width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg><span class="badge" id="wishlist-count">0</span></button>
+        <button class="nav-btn" id="cart-toggle"><svg width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 0 1-8 0"/></svg><span class="badge" id="cart-count">0</span></button>
+        <button class="hamburger" id="hamburger"><span></span><span></span><span></span></button>
+      </div>
+    </div>
+  </header>
+
+  <!-- SHOP HEADER -->
+  <section class="page-header" style="background:#f9f6f1; padding: 60px 0; text-align: center; border-bottom: 1px solid var(--border-light);">
+    <div class="container">
+      <h1 style="font-family: var(--font-display); font-size: 3rem; margin-bottom: 10px;">Our Collection</h1>
+      <p style="color: var(--text-muted);">Explore the perfect blend of tradition and elegance.</p>
+    </div>
+  </section>
+
+  <!-- SHOP MAIN -->
+  <main class="container" style="display: grid; grid-template-columns: 250px 1fr; gap: 40px; padding: 60px 0;">
+    <!-- Sidebar Filters -->
+    <aside class="shop-sidebar">
+      <div class="filter-group">
+        <h4>Categories</h4>
+        <div class="filter-list">
+          <label><input type="radio" name="cat" checked onclick="filterByCategory('all')"> All Items</label>
+          <label><input type="radio" name="cat" onclick="filterByCategory('lehenga')"> Lehenga Choli</label>
+          <label><input type="radio" name="cat" onclick="filterByCategory('ghagra')"> Ghagra Choli</label>
+          <label><input type="radio" name="cat" onclick="filterByCategory('skirt')"> Flared Skirts</label>
+          <label><input type="radio" name="cat" onclick="filterByCategory('jewelry')"> Heritage Jewelry</label>
+          <label><input type="radio" name="cat" onclick="filterByCategory('purse')"> Purses & Bags</label>
+        </div>
+      </div>
+    </aside>
+
+    <!-- Product Grid Section -->
+    <section>
+      <div class="products-grid" id="products-grid">
+        <!-- JS Populated -->
+      </div>
+      <div class="load-more-wrap" style="text-align: center; margin-top: 40px;">
+        <button class="btn-outline" id="load-more-btn" onclick="loadMoreProducts()">Load More</button>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container text-center" style="padding: 40px 0; border-top: 1px solid var(--border-light);">
+      <p>&copy; 2026 Ethnic Elegance. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <!-- MODALS (Standard) -->
+  <div class="overlay" id="overlay" onclick="closeAll()"></div>
+  <div class="cart-drawer" id="cart-drawer">
+    <div class="drawer-header"><h3>Your Cart 🛍</h3><button class="close-drawer" onclick="closeAll()">✕</button></div>
+    <div class="cart-items" id="cart-items"></div>
+    <div class="cart-footer" id="cart-footer">
+      <div class="cart-total"><span>Total:</span><span id="cart-total-amount">$0</span></div>
+      <button class="btn-primary full-width" onclick="checkout()">Checkout</button>
+    </div>
+  </div>
+  <div class="wishlist-drawer" id="wishlist-drawer">
+    <div class="drawer-header"><h3>Your Wishlist ♥</h3><button class="close-drawer" onclick="closeAll()">✕</button></div>
+    <div class="wishlist-items" id="wishlist-items"></div>
+  </div>
+  <div class="product-modal-overlay" id="product-modal-overlay" onclick="closeProductModal()"></div>
+  <div class="product-modal" id="product-modal"><button class="modal-close" onclick="closeProductModal()">✕</button><div class="modal-content" id="modal-content"></div></div>
+  <div class="toast" id="toast"></div>
+
+  <script src="app.js"></script>
+</body>
+</html>

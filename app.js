@@ -5,101 +5,1079 @@
 // ─── PRODUCT DATABASE ───
 const ALL_PRODUCTS = [
     {
-        id: 1, name: "Crimson Mirrored Lehenga Choli", category: "lehenga",
-        price: 89.97, originalPrice: 143.97, image: "images/lehenga_red_gold.png",
-        rating: 4.8, reviews: 312, badge: "Bestseller",
-        description: "A stunning red and gold lehenga choli adorned with intricate mirror work embroidery and a golden gota patti border. Perfect for Navratri, weddings, and festive celebrations. Includes blouse and dupatta.",
-        sizes: ["XS", "S", "M", "L", "XL", "XXL"], colors: ["Red & Gold"],
-        discount: 38
+        "id": 1,
+        "name": "Scarlet Heritage Lehenga Set",
+        "category": "lehenga",
+        "price": 89.97,
+        "originalPrice": 149.97,
+        "image": "images/WhatsApp Image 2026-04-08 at 1.04.03 PM.jpeg",
+        "rating": 4.6,
+        "reviews": 107,
+        "badge": "",
+        "description": "A rich red embroidered lehenga set with ornate border detailing and festive occasion appeal.Traditional festive silhouetteStatement color and border detailingSuitable for celebrations, weddings, and cultural occasions",
+        "sizes": [
+            "S",
+            "M",
+            "L",
+            "XL"
+        ],
+        "colors": [
+            "bridal festive red embroidered lehenga traditional occasion wear"
+        ],
+        "discount": 40
     },
     {
-        id: 2, name: "Magenta Rose Bridal Lehenga", category: "lehenga",
-        price: 119.97, originalPrice: 179.97, image: "images/lehenga_magenta_pink.png",
-        rating: 4.9, reviews: 189, badge: "New",
-        description: "A breathtaking magenta pink lehenga choli with heavy silver embroidery, gota patti border, and a gorgeous matching dupatta. Ideal for bridal events and wedding ceremonies.",
-        sizes: ["XS", "S", "M", "L", "XL"], colors: ["Magenta & Silver"],
-        discount: 34
+        "id": 2,
+        "name": "Mustard Sunburst Lehenga Set",
+        "category": "lehenga",
+        "price": 89.97,
+        "originalPrice": 149.97,
+        "image": "images/WhatsApp Image 2026-04-08 at 1.04.02 PM.jpeg",
+        "rating": 4.7,
+        "reviews": 114,
+        "badge": "",
+        "description": "A mustard yellow lehenga set with statement border work and a bright celebratory look.Traditional festive silhouetteStatement color and border detailingSuitable for celebrations, weddings, and cultural occasions",
+        "sizes": [
+            "S",
+            "M",
+            "L",
+            "XL"
+        ],
+        "colors": [
+            "mustard yellow festive lehenga embroidered traditional ethnic wear"
+        ],
+        "discount": 40
     },
     {
-        id: 3, name: "Mustard Bandhani Ghagra Choli", category: "ghagra",
-        price: 65.97, originalPrice: 101.97, image: "images/ghagra_mustard_yellow.png",
-        rating: 4.7, reviews: 425, badge: "Bestseller",
-        description: "Vibrant mustard yellow Chaniya Choli with colorful bandhani print, mirror embroidery work, and playful tassel accents. Your perfect Navratri & Garba outfit!",
-        sizes: ["S", "M", "L", "XL", "XXL"], colors: ["Mustard Yellow"],
-        discount: 36
+        "id": 3,
+        "name": "Royal Plum Lehenga Set",
+        "category": "lehenga",
+        "price": 89.97,
+        "originalPrice": 149.97,
+        "image": "images/WhatsApp Image 2026-04-08 at 1.04.02 PM (1).jpeg",
+        "rating": 4.8,
+        "reviews": 121,
+        "badge": "",
+        "description": "A deep plum lehenga set with multicolor border accents designed for festive and wedding styling.Traditional festive silhouetteStatement color and border detailingSuitable for celebrations, weddings, and cultural occasions",
+        "sizes": [
+            "S",
+            "M",
+            "L",
+            "XL"
+        ],
+        "colors": [
+            "plum purple festive lehenga ethnic wear embroidered set"
+        ],
+        "discount": 40
     },
     {
-        id: 4, name: "Royal Blue Peacock Lehenga", category: "lehenga",
-        price: 104.97, originalPrice: 164.97, image: "images/lehenga_royal_blue.png",
-        rating: 4.6, reviews: 143, badge: "Sale",
-        description: "Elegant royal blue lehenga choli with exquisite zari embroidery, sequin work, and beautiful peacock motifs. A timeless piece for weddings and grand festivals.",
-        sizes: ["XS", "S", "M", "L", "XL"], colors: ["Royal Blue & Gold"],
-        discount: 36
+        "id": 4,
+        "name": "Meadow Green Lehenga Set",
+        "category": "lehenga",
+        "price": 89.97,
+        "originalPrice": 149.97,
+        "image": "images/WhatsApp Image 2026-04-08 at 1.04.02 PM (2).jpeg",
+        "rating": 4.9,
+        "reviews": 128,
+        "badge": "New",
+        "description": "A vibrant green lehenga set featuring contrast border detailing and a festive silhouette.Traditional festive silhouetteStatement color and border detailingSuitable for celebrations, weddings, and cultural occasions",
+        "sizes": [
+            "S",
+            "M",
+            "L",
+            "XL"
+        ],
+        "colors": [
+            "green lehenga festive embroidered traditional outfit"
+        ],
+        "discount": 40
     },
     {
-        id: 5, name: "Lime Green Garba Chaniya Choli", category: "ghagra",
-        price: 59.97, originalPrice: 89.97, image: "images/green_lehenga_choli.png",
-        rating: 4.5, reviews: 267, badge: "New",
-        description: "Beautiful lime green Chaniya Choli with bandhani print, mirror embroidery, and a matching chunri dupatta. Dance your heart out this Navratri in style!",
-        sizes: ["S", "M", "L", "XL", "XXL"], colors: ["Lime Green & Red"],
-        discount: 36
+        "id": 5,
+        "name": "Ivory Regal Lehenga Set",
+        "category": "lehenga",
+        "price": 89.97,
+        "originalPrice": 149.97,
+        "image": "images/WhatsApp Image 2026-04-08 at 1.04.01 PM (2).jpeg",
+        "rating": 4.5,
+        "reviews": 135,
+        "badge": "Bestseller",
+        "description": "An ivory lehenga set with elegant gold-toned border work for weddings and special events.Traditional festive silhouetteStatement color and border detailingSuitable for celebrations, weddings, and cultural occasions",
+        "sizes": [
+            "S",
+            "M",
+            "L",
+            "XL"
+        ],
+        "colors": [
+            "ivory cream lehenga wedding festive ethnic wear"
+        ],
+        "discount": 40
     },
     {
-        id: 6, name: "Kundan Meenakari Gold Set", category: "jewelry",
-        price: 47.97, originalPrice: 80.97, image: "images/jewelry_gold_set.png",
-        rating: 4.9, reviews: 534, badge: "Bestseller",
-        description: "An exquisite traditional Indian gold jewelry set featuring a necklace, earrings, maang tikka, and bangles. Crafted with authentic kundan and meenakari work.",
-        sizes: ["One Size"], colors: ["Gold"],
-        discount: 41
+        "id": 6,
+        "name": "Midnight Plum Floral Border Lehenga",
+        "category": "lehenga",
+        "price": 89.97,
+        "originalPrice": 149.97,
+        "image": "images/WhatsApp Image 2026-04-08 at 1.04.01 PM.jpeg",
+        "rating": 4.6,
+        "reviews": 142,
+        "badge": "",
+        "description": "A dark plum lehenga displayed with floral border detailing and a classic festive finish.Traditional festive silhouetteStatement color and border detailingSuitable for celebrations, weddings, and cultural occasions",
+        "sizes": [
+            "S",
+            "M",
+            "L",
+            "XL"
+        ],
+        "colors": [
+            "plum floral border lehenga traditional occasion wear"
+        ],
+        "discount": 40
     },
     {
-        id: 7, name: "Embroidered Ethnic Clutch Purse", category: "purse",
-        price: 29.97, originalPrice: 47.97, image: "images/traditional_purse_clutch.png",
-        rating: 4.6, reviews: 289, badge: "Sale",
-        description: "Gorgeous traditional ethnic clutch purse with hand-embroidery, mirror work, and sequin accents in vibrant maroon and gold. The perfect festive accessory!",
-        sizes: ["One Size"], colors: ["Maroon & Gold"],
-        discount: 38
+        "id": 7,
+        "name": "Lime Zari Border Lehenga",
+        "category": "lehenga",
+        "price": 89.97,
+        "originalPrice": 149.97,
+        "image": "images/WhatsApp Image 2026-04-08 at 1.04.00 PM.jpeg",
+        "rating": 4.7,
+        "reviews": 149,
+        "badge": "",
+        "description": "A bright lime lehenga with zari-inspired border accents and statement festive color.Traditional festive silhouetteStatement color and border detailingSuitable for celebrations, weddings, and cultural occasions",
+        "sizes": [
+            "S",
+            "M",
+            "L",
+            "XL"
+        ],
+        "colors": [
+            "lime green zari lehenga traditional festive"
+        ],
+        "discount": 40
     },
     {
-        id: 8, name: "Golden Ethnic Ladies Watch", category: "watch",
-        price: 53.97, originalPrice: 89.97, image: "images/traditional_watch_ladies.png",
-        rating: 4.4, reviews: 98, badge: "New",
-        description: "An elegant ladies' traditional Indian style watch featuring a golden bracelet band, ethnic motif dial with colorful enamel work, and a beautiful floral design. Timeless fashion meets tradition.",
-        sizes: ["One Size"], colors: ["Gold"],
-        discount: 40
-    },
-    // Additional products (use gradient placeholders with emoji)
-    {
-        id: 9, name: "Bandhani Silk Dupatta", category: "dupatta",
-        price: 26.97, originalPrice: 38.97, image: null, emoji: "🧣", color: "#8e44ad",
-        rating: 4.5, reviews: 178, badge: "New",
-        description: "A vibrant Bandhani silk dupatta with rich traditional print and decorative golden border. Pairs beautifully with any ethnic outfit.",
-        sizes: ["One Size"], colors: ["Purple", "Red", "Green"],
-        discount: 36
-    },
-    {
-        id: 10, name: "Silver Oxidized Jhumka Set", category: "jewelry",
-        price: 17.97, originalPrice: 29.97, image: null, emoji: "💍", color: "#7f8c8d",
-        rating: 4.7, reviews: 612, badge: "Bestseller",
-        description: "Classic silver oxidized jhumka earrings with traditional floral motif. A wardrobe essential for every ethnic look.",
-        sizes: ["One Size"], colors: ["Silver"],
-        discount: 38
+        "id": 8,
+        "name": "Vermilion Celebration Lehenga",
+        "category": "lehenga",
+        "price": 89.97,
+        "originalPrice": 149.97,
+        "image": "images/WhatsApp Image 2026-04-08 at 1.04.03 PM.jpeg",
+        "rating": 4.8,
+        "reviews": 156,
+        "badge": "New",
+        "description": "A festive red lehenga with standout border work designed for wedding-season dressing.Traditional festive silhouetteStatement color and border detailingSuitable for celebrations, weddings, and cultural occasions",
+        "sizes": [
+            "S",
+            "M",
+            "L",
+            "XL"
+        ],
+        "colors": [
+            "red festive lehenga wedding ethnic wear"
+        ],
+        "discount": 40
     },
     {
-        id: 11, name: "Floral Zardosi Anarkali Suit", category: "lehenga",
-        price: 80.97, originalPrice: 125.97, image: null, emoji: "👗", color: "#e74c3c",
-        rating: 4.6, reviews: 156, badge: "New",
-        description: "Elegant floral Zardosi embroidered Anarkali suit in rich fabric. Perfect for festive gatherings and family celebrations.",
-        sizes: ["XS", "S", "M", "L", "XL"], colors: ["Red", "Teal"],
-        discount: 37
+        "id": 9,
+        "name": "Golden Marigold Lehenga",
+        "category": "lehenga",
+        "price": 89.97,
+        "originalPrice": 149.97,
+        "image": "images/WhatsApp Image 2026-04-08 at 1.03.58 PM.jpeg",
+        "rating": 4.9,
+        "reviews": 163,
+        "badge": "",
+        "description": "A golden marigold lehenga with contrast embroidered border for a bold traditional look.Traditional festive silhouetteStatement color and border detailingSuitable for celebrations, weddings, and cultural occasions",
+        "sizes": [
+            "S",
+            "M",
+            "L",
+            "XL"
+        ],
+        "colors": [
+            "gold mustard lehenga festive traditional embroidered"
+        ],
+        "discount": 40
     },
     {
-        id: 12, name: "Navratri Special Chaniya Set", category: "ghagra",
-        price: 47.97, originalPrice: 71.97, image: null, emoji: "🌸", color: "#e67e22",
-        rating: 4.4, reviews: 321, badge: "Sale",
-        description: "Colorful Navratri special Chaniya Choli with multicolor bandhani print and mirror embroidery. Light and comfortable for long hours of Garba.",
-        sizes: ["S", "M", "L", "XL"], colors: ["Multicolor"],
-        discount: 35
+        "id": 10,
+        "name": "Navy Fuchsia Colorblock Lehenga",
+        "category": "lehenga",
+        "price": 89.97,
+        "originalPrice": 149.97,
+        "image": "images/WhatsApp Image 2026-04-08 at 12.58.58 PM.jpeg",
+        "rating": 4.5,
+        "reviews": 170,
+        "badge": "Bestseller",
+        "description": "A navy and fuchsia lehenga with vibrant panel contrast and festive styling appeal.Traditional festive silhouetteStatement color and border detailingSuitable for celebrations, weddings, and cultural occasions",
+        "sizes": [
+            "S",
+            "M",
+            "L",
+            "XL"
+        ],
+        "colors": [
+            "navy pink colorblock lehenga festive"
+        ],
+        "discount": 40
+    },
+    {
+        "id": 11,
+        "name": "Royal Blue Saffron Lehenga",
+        "category": "lehenga",
+        "price": 89.97,
+        "originalPrice": 149.97,
+        "image": "images/WhatsApp Image 2026-04-08 at 12.58.57 PM.jpeg",
+        "rating": 4.6,
+        "reviews": 177,
+        "badge": "",
+        "description": "A royal blue lehenga set enhanced with saffron-toned accents and multicolor border work.Traditional festive silhouetteStatement color and border detailingSuitable for celebrations, weddings, and cultural occasions",
+        "sizes": [
+            "S",
+            "M",
+            "L",
+            "XL"
+        ],
+        "colors": [
+            "blue orange lehenga festive ethnic"
+        ],
+        "discount": 40
+    },
+    {
+        "id": 12,
+        "name": "Silver Ivory Bridal Lehenga",
+        "category": "lehenga",
+        "price": 89.97,
+        "originalPrice": 149.97,
+        "image": "images/WhatsApp Image 2026-04-08 at 12.58.57 PM (1).jpeg",
+        "rating": 4.7,
+        "reviews": 184,
+        "badge": "New",
+        "description": "An ivory lehenga with silver-toned embellishment details suited for wedding events.Traditional festive silhouetteStatement color and border detailingSuitable for celebrations, weddings, and cultural occasions",
+        "sizes": [
+            "S",
+            "M",
+            "L",
+            "XL"
+        ],
+        "colors": [
+            "ivory silver lehenga bridal festive"
+        ],
+        "discount": 40
+    },
+    {
+        "id": 13,
+        "name": "Sunset Multicolor Lehenga",
+        "category": "lehenga",
+        "price": 89.97,
+        "originalPrice": 149.97,
+        "image": "images/WhatsApp Image 2026-04-08 at 12.58.56 PM (2).jpeg",
+        "rating": 4.8,
+        "reviews": 191,
+        "badge": "",
+        "description": "A bright lehenga with pink, yellow, and navy panels for statement festive dressing.Traditional festive silhouetteStatement color and border detailingSuitable for celebrations, weddings, and cultural occasions",
+        "sizes": [
+            "S",
+            "M",
+            "L",
+            "XL"
+        ],
+        "colors": [
+            "multicolor lehenga pink yellow navy festive"
+        ],
+        "discount": 40
+    },
+    {
+        "id": 14,
+        "name": "Wine Cream Tiered Lehenga",
+        "category": "lehenga",
+        "price": 89.97,
+        "originalPrice": 149.97,
+        "image": "images/WhatsApp Image 2026-04-08 at 12.58.57 PM (2).jpeg",
+        "rating": 4.9,
+        "reviews": 198,
+        "badge": "",
+        "description": "A wine-toned lehenga with cream tier detailing for a rich traditional silhouette.Traditional festive silhouetteStatement color and border detailingSuitable for celebrations, weddings, and cultural occasions",
+        "sizes": [
+            "S",
+            "M",
+            "L",
+            "XL"
+        ],
+        "colors": [
+            "wine cream lehenga tiered ethnic festive"
+        ],
+        "discount": 40
+    },
+    {
+        "id": 15,
+        "name": "Rose Pink Panel Lehenga",
+        "category": "lehenga",
+        "price": 89.97,
+        "originalPrice": 149.97,
+        "image": "images/WhatsApp Image 2026-04-08 at 12.58.56 PM (1).jpeg",
+        "rating": 4.5,
+        "reviews": 205,
+        "badge": "Bestseller",
+        "description": "A rose pink lehenga featuring contrast panel work and occasion-ready detailing.Traditional festive silhouetteStatement color and border detailingSuitable for celebrations, weddings, and cultural occasions",
+        "sizes": [
+            "S",
+            "M",
+            "L",
+            "XL"
+        ],
+        "colors": [
+            "pink panel lehenga festive ethnic wear"
+        ],
+        "discount": 40
+    },
+    {
+        "id": 16,
+        "name": "Indigo Print Lehenga",
+        "category": "lehenga",
+        "price": 89.97,
+        "originalPrice": 149.97,
+        "image": "images/WhatsApp Image 2026-04-08 at 12.58.54 PM.jpeg",
+        "rating": 4.6,
+        "reviews": 212,
+        "badge": "New",
+        "description": "An indigo-toned printed lehenga with contemporary ethnic styling and contrast accents.Traditional festive silhouetteStatement color and border detailingSuitable for celebrations, weddings, and cultural occasions",
+        "sizes": [
+            "S",
+            "M",
+            "L",
+            "XL"
+        ],
+        "colors": [
+            "indigo printed lehenga blue ethnic festive"
+        ],
+        "discount": 40
+    },
+    {
+        "id": 17,
+        "name": "Champagne Gold Embroidered Lehenga",
+        "category": "lehenga",
+        "price": 89.97,
+        "originalPrice": 149.97,
+        "image": "images/WhatsApp Image 2026-04-08 at 12.58.31 PM.jpeg",
+        "rating": 4.7,
+        "reviews": 219,
+        "badge": "",
+        "description": "A champagne gold lehenga with elegant all-over patterning for refined festive wear.Traditional festive silhouetteStatement color and border detailingSuitable for celebrations, weddings, and cultural occasions",
+        "sizes": [
+            "S",
+            "M",
+            "L",
+            "XL"
+        ],
+        "colors": [
+            "champagne gold lehenga embroidered festive"
+        ],
+        "discount": 40
+    },
+    {
+        "id": 18,
+        "name": "Blush Floral Lehenga",
+        "category": "lehenga",
+        "price": 89.97,
+        "originalPrice": 149.97,
+        "image": "images/WhatsApp Image 2026-04-08 at 12.58.31 PM (2).jpeg",
+        "rating": 4.8,
+        "reviews": 226,
+        "badge": "",
+        "description": "A soft blush lehenga with floral-inspired print and a light festive aesthetic.Traditional festive silhouetteStatement color and border detailingSuitable for celebrations, weddings, and cultural occasions",
+        "sizes": [
+            "S",
+            "M",
+            "L",
+            "XL"
+        ],
+        "colors": [
+            "blush floral lehenga pink festive"
+        ],
+        "discount": 40
+    },
+    {
+        "id": 19,
+        "name": "Dusty Rose Classic Lehenga",
+        "category": "lehenga",
+        "price": 89.97,
+        "originalPrice": 149.97,
+        "image": "images/WhatsApp Image 2026-04-08 at 12.58.30 PM.jpeg",
+        "rating": 4.9,
+        "reviews": 233,
+        "badge": "",
+        "description": "A dusty rose lehenga with fine traditional patterning and a timeless festive look.Traditional festive silhouetteStatement color and border detailingSuitable for celebrations, weddings, and cultural occasions",
+        "sizes": [
+            "S",
+            "M",
+            "L",
+            "XL"
+        ],
+        "colors": [
+            "dusty rose lehenga ethnic traditional festive"
+        ],
+        "discount": 40
+    },
+    {
+        "id": 20,
+        "name": "Coral Traditional Lehenga",
+        "category": "lehenga",
+        "price": 89.97,
+        "originalPrice": 149.97,
+        "image": "images/WhatsApp Image 2026-04-08 at 12.58.29 PM.jpeg",
+        "rating": 4.5,
+        "reviews": 240,
+        "badge": "New",
+        "description": "A coral lehenga set with traditional pattern work and bold festive color.Traditional festive silhouetteStatement color and border detailingSuitable for celebrations, weddings, and cultural occasions",
+        "sizes": [
+            "S",
+            "M",
+            "L",
+            "XL"
+        ],
+        "colors": [
+            "coral red lehenga traditional festive"
+        ],
+        "discount": 40
+    },
+    {
+        "id": 21,
+        "name": "Sage Pastel Lehenga",
+        "category": "lehenga",
+        "price": 89.97,
+        "originalPrice": 149.97,
+        "image": "images/WhatsApp Image 2026-04-08 at 12.58.30 PM (2).jpeg",
+        "rating": 4.6,
+        "reviews": 247,
+        "badge": "",
+        "description": "A sage green lehenga with soft patterning for elegant festive and occasion wear.Traditional festive silhouetteStatement color and border detailingSuitable for celebrations, weddings, and cultural occasions",
+        "sizes": [
+            "S",
+            "M",
+            "L",
+            "XL"
+        ],
+        "colors": [
+            "sage green lehenga pastel festive"
+        ],
+        "discount": 40
+    },
+    {
+        "id": 22,
+        "name": "Olive Ivory Border Lehenga",
+        "category": "lehenga",
+        "price": 89.97,
+        "originalPrice": 149.97,
+        "image": "images/WhatsApp Image 2026-03-30 at 1.04.43 PM.jpeg",
+        "rating": 4.7,
+        "reviews": 254,
+        "badge": "",
+        "description": "An olive lehenga with ivory-toned border work for traditional celebratory dressing.Traditional festive silhouetteStatement color and border detailingSuitable for celebrations, weddings, and cultural occasions",
+        "sizes": [
+            "S",
+            "M",
+            "L",
+            "XL"
+        ],
+        "colors": [
+            "olive ivory lehenga festive border"
+        ],
+        "discount": 40
+    },
+    {
+        "id": 23,
+        "name": "Tricolor Festive Lehenga",
+        "category": "lehenga",
+        "price": 89.97,
+        "originalPrice": 149.97,
+        "image": "images/WhatsApp Image 2026-03-30 at 1.04.42 PM.jpeg",
+        "rating": 4.8,
+        "reviews": 261,
+        "badge": "",
+        "description": "A striking yellow, orange, and red lehenga designed for high-visibility festive occasions.Traditional festive silhouetteStatement color and border detailingSuitable for celebrations, weddings, and cultural occasions",
+        "sizes": [
+            "S",
+            "M",
+            "L",
+            "XL"
+        ],
+        "colors": [
+            "yellow orange red lehenga festive multicolor"
+        ],
+        "discount": 40
+    },
+    {
+        "id": 24,
+        "name": "Black Copper Lehenga",
+        "category": "lehenga",
+        "price": 89.97,
+        "originalPrice": 149.97,
+        "image": "images/WhatsApp Image 2026-03-30 at 1.04.42 PM (2).jpeg",
+        "rating": 4.9,
+        "reviews": 268,
+        "badge": "New",
+        "description": "A black lehenga with copper-orange accents and border detail for evening festive styling.Traditional festive silhouetteStatement color and border detailingSuitable for celebrations, weddings, and cultural occasions",
+        "sizes": [
+            "S",
+            "M",
+            "L",
+            "XL"
+        ],
+        "colors": [
+            "black copper lehenga festive evening"
+        ],
+        "discount": 40
+    },
+    {
+        "id": 25,
+        "name": "Fuchsia Navy Lehenga",
+        "category": "lehenga",
+        "price": 89.97,
+        "originalPrice": 149.97,
+        "image": "images/WhatsApp Image 2026-03-19 at 12.15.24 PM.jpeg",
+        "rating": 4.5,
+        "reviews": 275,
+        "badge": "Bestseller",
+        "description": "A bright fuchsia lehenga balanced with navy contrast for statement festive wear.Traditional festive silhouetteStatement color and border detailingSuitable for celebrations, weddings, and cultural occasions",
+        "sizes": [
+            "S",
+            "M",
+            "L",
+            "XL"
+        ],
+        "colors": [
+            "fuchsia navy lehenga festive traditional"
+        ],
+        "discount": 40
+    },
+    {
+        "id": 26,
+        "name": "Burnt Orange Lehenga",
+        "category": "lehenga",
+        "price": 89.97,
+        "originalPrice": 149.97,
+        "image": "images/WhatsApp Image 2026-03-19 at 12.15.23 PM (1).jpeg",
+        "rating": 4.6,
+        "reviews": 282,
+        "badge": "",
+        "description": "A burnt orange lehenga with contrast border accents and traditional occasion styling.Traditional festive silhouetteStatement color and border detailingSuitable for celebrations, weddings, and cultural occasions",
+        "sizes": [
+            "S",
+            "M",
+            "L",
+            "XL"
+        ],
+        "colors": [
+            "burnt orange lehenga festive ethnic"
+        ],
+        "discount": 40
+    },
+    {
+        "id": 27,
+        "name": "Teal Pink Lehenga",
+        "category": "lehenga",
+        "price": 89.97,
+        "originalPrice": 149.97,
+        "image": "images/WhatsApp Image 2026-03-19 at 12.15.22 PM.jpeg",
+        "rating": 4.7,
+        "reviews": 289,
+        "badge": "",
+        "description": "A teal lehenga accented with bright pink border tones for vibrant festive dressing.Traditional festive silhouetteStatement color and border detailingSuitable for celebrations, weddings, and cultural occasions",
+        "sizes": [
+            "S",
+            "M",
+            "L",
+            "XL"
+        ],
+        "colors": [
+            "teal pink lehenga festive traditional"
+        ],
+        "discount": 40
+    },
+    {
+        "id": 28,
+        "name": "White Lilac Anarkali Set",
+        "category": "lehenga",
+        "price": 69.97,
+        "originalPrice": 119.97,
+        "image": "images/WhatsApp Image 2026-03-19 at 12.15.22 PM (1).jpeg",
+        "rating": 4.8,
+        "reviews": 296,
+        "badge": "New",
+        "description": "A white and lilac traditional set with graceful flow and occasion-ready finish.Traditional festive silhouetteStatement color and border detailingSuitable for celebrations, weddings, and cultural occasions",
+        "sizes": [
+            "S",
+            "M",
+            "L",
+            "XL"
+        ],
+        "colors": [
+            "white lilac anarkali ethnic festive"
+        ],
+        "discount": 41
+    },
+    {
+        "id": 29,
+        "name": "Magenta Drape Festive Set",
+        "category": "ghagra",
+        "price": 59.97,
+        "originalPrice": 99.97,
+        "image": "images/WhatsApp Image 2026-03-19 at 12.15.22 PM (2).jpeg",
+        "rating": 4.9,
+        "reviews": 103,
+        "badge": "",
+        "description": "A dramatic magenta traditional outfit with fluid drape styling for festive wear.Traditional festive silhouetteStatement color and border detailingSuitable for celebrations, weddings, and cultural occasions",
+        "sizes": [
+            "S",
+            "M",
+            "L",
+            "XL"
+        ],
+        "colors": [
+            "magenta drape festive ethnic wear"
+        ],
+        "discount": 40
+    },
+    {
+        "id": 30,
+        "name": "Sunshine Yellow Flared Skirt",
+        "category": "skirt",
+        "price": 39.97,
+        "originalPrice": 79.97,
+        "image": "images/WhatsApp Image 2026-03-19 at 12.15.22 PM (3).jpeg",
+        "rating": 4.5,
+        "reviews": 110,
+        "badge": "Bestseller",
+        "description": "A bright yellow full-flare skirt designed for pairing with festive blouses and dupattas.Traditional festive silhouetteStatement color and border detailingSuitable for celebrations, weddings, and cultural occasions",
+        "sizes": [
+            "Free Size"
+        ],
+        "colors": [
+            "yellow flared skirt ethnic festive"
+        ],
+        "discount": 50
+    },
+    {
+        "id": 31,
+        "name": "Ivory Classic Flared Skirt",
+        "category": "skirt",
+        "price": 39.97,
+        "originalPrice": 79.97,
+        "image": "images/WhatsApp Image 2026-03-19 at 12.15.21 PM.jpeg",
+        "rating": 4.6,
+        "reviews": 117,
+        "badge": "",
+        "description": "An ivory flared skirt with clean traditional styling for mix-and-match ethnic looks.Traditional festive silhouetteStatement color and border detailingSuitable for celebrations, weddings, and cultural occasions",
+        "sizes": [
+            "Free Size"
+        ],
+        "colors": [
+            "ivory flared skirt ethnic traditional"
+        ],
+        "discount": 50
+    },
+    {
+        "id": 32,
+        "name": "Sand Beige Flared Skirt",
+        "category": "skirt",
+        "price": 39.97,
+        "originalPrice": 79.97,
+        "image": "images/WhatsApp Image 2026-03-19 at 12.15.21 PM (1).jpeg",
+        "rating": 4.7,
+        "reviews": 124,
+        "badge": "New",
+        "description": "A sand beige flared skirt with versatile styling for elegant ethnic combinations.Traditional festive silhouetteStatement color and border detailingSuitable for celebrations, weddings, and cultural occasions",
+        "sizes": [
+            "Free Size"
+        ],
+        "colors": [
+            "beige flared skirt ethnic mix match"
+        ],
+        "discount": 50
+    },
+    {
+        "id": 33,
+        "name": "Mauve Flared Skirt",
+        "category": "skirt",
+        "price": 39.97,
+        "originalPrice": 79.97,
+        "image": "images/WhatsApp Image 2026-03-19 at 12.15.21 PM (2).jpeg",
+        "rating": 4.8,
+        "reviews": 131,
+        "badge": "",
+        "description": "A mauve flared skirt offering soft festive color and full-volume silhouette.Traditional festive silhouetteStatement color and border detailingSuitable for celebrations, weddings, and cultural occasions",
+        "sizes": [
+            "Free Size"
+        ],
+        "colors": [
+            "mauve flared skirt ethnic festive"
+        ],
+        "discount": 50
+    },
+    {
+        "id": 34,
+        "name": "Navy Classic Flared Skirt",
+        "category": "skirt",
+        "price": 39.97,
+        "originalPrice": 79.97,
+        "image": "images/WhatsApp Image 2026-03-19 at 12.15.20 PM.jpeg",
+        "rating": 4.9,
+        "reviews": 138,
+        "badge": "",
+        "description": "A deep navy full-flare skirt for timeless ethnic styling and easy pairing.Traditional festive silhouetteStatement color and border detailingSuitable for celebrations, weddings, and cultural occasions",
+        "sizes": [
+            "Free Size"
+        ],
+        "colors": [
+            "navy flared skirt traditional festive"
+        ],
+        "discount": 50
+    },
+    {
+        "id": 35,
+        "name": "Charcoal Black Flared Skirt",
+        "category": "skirt",
+        "price": 39.97,
+        "originalPrice": 79.97,
+        "image": "images/WhatsApp Image 2026-03-19 at 12.15.20 PM (1).jpeg",
+        "rating": 4.5,
+        "reviews": 145,
+        "badge": "Bestseller",
+        "description": "A charcoal-black flared skirt designed for elevated festive separates styling.Traditional festive silhouetteStatement color and border detailingSuitable for celebrations, weddings, and cultural occasions",
+        "sizes": [
+            "Free Size"
+        ],
+        "colors": [
+            "black flared skirt ethnic traditional"
+        ],
+        "discount": 50
+    },
+    {
+        "id": 36,
+        "name": "Mustard Solid Flared Skirt",
+        "category": "skirt",
+        "price": 39.97,
+        "originalPrice": 79.97,
+        "image": "images/WhatsApp Image 2026-03-19 at 12.15.20 PM (2).jpeg",
+        "rating": 4.6,
+        "reviews": 152,
+        "badge": "New",
+        "description": "A solid mustard flared skirt ideal for festive pairings and statement ethnic looks.Traditional festive silhouetteStatement color and border detailingSuitable for celebrations, weddings, and cultural occasions",
+        "sizes": [
+            "Free Size"
+        ],
+        "colors": [
+            "mustard flared skirt festive ethnic"
+        ],
+        "discount": 50
+    },
+    {
+        "id": 37,
+        "name": "Sunset Orange Flared Skirt",
+        "category": "skirt",
+        "price": 39.97,
+        "originalPrice": 79.97,
+        "image": "images/WhatsApp Image 2026-03-19 at 12.15.19 PM.jpeg",
+        "rating": 4.7,
+        "reviews": 159,
+        "badge": "",
+        "description": "A vivid orange flared skirt with bold color impact for festive styling.Traditional festive silhouetteStatement color and border detailingSuitable for celebrations, weddings, and cultural occasions",
+        "sizes": [
+            "Free Size"
+        ],
+        "colors": [
+            "orange flared skirt festive traditional"
+        ],
+        "discount": 50
+    },
+    {
+        "id": 38,
+        "name": "Wine Flared Skirt",
+        "category": "skirt",
+        "price": 39.97,
+        "originalPrice": 79.97,
+        "image": "images/WhatsApp Image 2026-03-19 at 12.15.16 PM.jpeg",
+        "rating": 4.8,
+        "reviews": 166,
+        "badge": "",
+        "description": "A wine-toned flared skirt for rich festive styling and traditional pairings.Traditional festive silhouetteStatement color and border detailingSuitable for celebrations, weddings, and cultural occasions",
+        "sizes": [
+            "Free Size"
+        ],
+        "colors": [
+            "wine flared skirt festive ethnic"
+        ],
+        "discount": 50
+    },
+    {
+        "id": 39,
+        "name": "Emerald Netted Skirt",
+        "category": "skirt",
+        "price": 39.97,
+        "originalPrice": 79.97,
+        "image": "images/WhatsApp Image 2026-03-19 at 12.15.16 PM (1).jpeg",
+        "rating": 4.9,
+        "reviews": 173,
+        "badge": "",
+        "description": "A deep emerald skirt with sheer or net-inspired finish for dressed-up ethnic styling.Traditional festive silhouetteStatement color and border detailingSuitable for celebrations, weddings, and cultural occasions",
+        "sizes": [
+            "Free Size"
+        ],
+        "colors": [
+            "emerald net skirt festive ethnic"
+        ],
+        "discount": 50
+    },
+    {
+        "id": 40,
+        "name": "Sky Blue Flared Skirt",
+        "category": "skirt",
+        "price": 39.97,
+        "originalPrice": 79.97,
+        "image": "images/WhatsApp Image 2026-03-19 at 12.15.16 PM (2).jpeg",
+        "rating": 4.5,
+        "reviews": 180,
+        "badge": "New",
+        "description": "A sky blue flared skirt for playful festive styling and mix-and-match looks.Traditional festive silhouetteStatement color and border detailingSuitable for celebrations, weddings, and cultural occasions",
+        "sizes": [
+            "Free Size"
+        ],
+        "colors": [
+            "sky blue flared skirt ethnic"
+        ],
+        "discount": 50
+    },
+    {
+        "id": 41,
+        "name": "Violet Flared Skirt",
+        "category": "skirt",
+        "price": 39.97,
+        "originalPrice": 79.97,
+        "image": "images/WhatsApp Image 2026-03-19 at 12.15.14 PM.jpeg",
+        "rating": 4.6,
+        "reviews": 187,
+        "badge": "",
+        "description": "A violet full-flare skirt with vibrant color and occasion-ready silhouette.Traditional festive silhouetteStatement color and border detailingSuitable for celebrations, weddings, and cultural occasions",
+        "sizes": [
+            "Free Size"
+        ],
+        "colors": [
+            "violet flared skirt festive"
+        ],
+        "discount": 50
+    },
+    {
+        "id": 42,
+        "name": "Hot Pink Flared Skirt",
+        "category": "skirt",
+        "price": 39.97,
+        "originalPrice": 79.97,
+        "image": "images/WhatsApp Image 2026-03-19 at 12.15.14 PM (1).jpeg",
+        "rating": 4.7,
+        "reviews": 194,
+        "badge": "",
+        "description": "A hot pink flared skirt that adds standout festive color to ethnic outfits.Traditional festive silhouetteStatement color and border detailingSuitable for celebrations, weddings, and cultural occasions",
+        "sizes": [
+            "Free Size"
+        ],
+        "colors": [
+            "hot pink flared skirt festive traditional"
+        ],
+        "discount": 50
+    },
+    {
+        "id": 43,
+        "name": "Cobalt Blue Flared Skirt",
+        "category": "skirt",
+        "price": 39.97,
+        "originalPrice": 79.97,
+        "image": "images/WhatsApp Image 2026-03-19 at 12.15.14 PM (2).jpeg",
+        "rating": 4.8,
+        "reviews": 201,
+        "badge": "",
+        "description": "A cobalt blue flared skirt crafted for vibrant ethnic styling combinations.Traditional festive silhouetteStatement color and border detailingSuitable for celebrations, weddings, and cultural occasions",
+        "sizes": [
+            "Free Size"
+        ],
+        "colors": [
+            "cobalt blue flared skirt festive"
+        ],
+        "discount": 50
+    },
+    {
+        "id": 44,
+        "name": "Lime Yellow Flared Skirt",
+        "category": "skirt",
+        "price": 39.97,
+        "originalPrice": 79.97,
+        "image": "images/WhatsApp Image 2026-03-19 at 12.15.14 PM (3).jpeg",
+        "rating": 4.9,
+        "reviews": 208,
+        "badge": "New",
+        "description": "A lime-yellow flared skirt with energetic festive color and full volume.Traditional festive silhouetteStatement color and border detailingSuitable for celebrations, weddings, and cultural occasions",
+        "sizes": [
+            "Free Size"
+        ],
+        "colors": [
+            "lime yellow flared skirt ethnic festive"
+        ],
+        "discount": 50
+    },
+    {
+        "id": 45,
+        "name": "Orchid Flared Skirt",
+        "category": "skirt",
+        "price": 39.97,
+        "originalPrice": 79.97,
+        "image": "images/WhatsApp Image 2026-03-19 at 12.15.13 PM.jpeg",
+        "rating": 4.5,
+        "reviews": 215,
+        "badge": "Bestseller",
+        "description": "An orchid-toned flared skirt that works well for colorful festive styling.Traditional festive silhouetteStatement color and border detailingSuitable for celebrations, weddings, and cultural occasions",
+        "sizes": [
+            "Free Size"
+        ],
+        "colors": [
+            "orchid flared skirt traditional festive"
+        ],
+        "discount": 50
+    },
+    {
+        "id": 46,
+        "name": "Lavender Flared Skirt",
+        "category": "skirt",
+        "price": 39.97,
+        "originalPrice": 79.97,
+        "image": "images/WhatsApp Image 2026-03-19 at 12.15.13 PM (1).jpeg",
+        "rating": 4.6,
+        "reviews": 222,
+        "badge": "",
+        "description": "A lavender flared skirt with soft color and occasion-friendly elegance.Traditional festive silhouetteStatement color and border detailingSuitable for celebrations, weddings, and cultural occasions",
+        "sizes": [
+            "Free Size"
+        ],
+        "colors": [
+            "lavender flared skirt ethnic"
+        ],
+        "discount": 50
+    },
+    {
+        "id": 47,
+        "name": "Midnight Black Flared Skirt",
+        "category": "skirt",
+        "price": 39.97,
+        "originalPrice": 79.97,
+        "image": "images/WhatsApp Image 2026-03-19 at 12.15.12 PM.jpeg",
+        "rating": 4.7,
+        "reviews": 229,
+        "badge": "",
+        "description": "A midnight black flared skirt with timeless styling versatility for ethnic looks.Traditional festive silhouetteStatement color and border detailingSuitable for celebrations, weddings, and cultural occasions",
+        "sizes": [
+            "Free Size"
+        ],
+        "colors": [
+            "black flared skirt festive mix match"
+        ],
+        "discount": 50
+    },
+    {
+        "id": 48,
+        "name": "Stone Beige Flared Skirt",
+        "category": "skirt",
+        "price": 39.97,
+        "originalPrice": 79.97,
+        "image": "images/WhatsApp Image 2026-03-19 at 12.15.13 PM (3).jpeg",
+        "rating": 4.8,
+        "reviews": 236,
+        "badge": "New",
+        "description": "A stone beige flared skirt suited for understated festive styling.Traditional festive silhouetteStatement color and border detailingSuitable for celebrations, weddings, and cultural occasions",
+        "sizes": [
+            "Free Size"
+        ],
+        "colors": [
+            "stone beige flared skirt ethnic"
+        ],
+        "discount": 50
+    },
+    {
+        "id": 49,
+        "name": "White Flared Skirt",
+        "category": "skirt",
+        "price": 39.97,
+        "originalPrice": 79.97,
+        "image": "images/WhatsApp Image 2026-03-19 at 12.15.12 PM (1).jpeg",
+        "rating": 4.9,
+        "reviews": 243,
+        "badge": "",
+        "description": "A clean white flared skirt for classic mix-and-match traditional outfits.Traditional festive silhouetteStatement color and border detailingSuitable for celebrations, weddings, and cultural occasions",
+        "sizes": [
+            "Free Size"
+        ],
+        "colors": [
+            "white flared skirt festive traditional"
+        ],
+        "discount": 50
+    },
+    {
+        "id": 50,
+        "name": "Rust Orange Flared Skirt",
+        "category": "skirt",
+        "price": 39.97,
+        "originalPrice": 79.97,
+        "image": "images/WhatsApp Image 2026-03-19 at 12.15.12 PM (2).jpeg",
+        "rating": 4.5,
+        "reviews": 250,
+        "badge": "Bestseller",
+        "description": "A rust orange flared skirt with warm festive color and full silhouette.Traditional festive silhouetteStatement color and border detailingSuitable for celebrations, weddings, and cultural occasions",
+        "sizes": [
+            "Free Size"
+        ],
+        "colors": [
+            "rust orange flared skirt ethnic festive"
+        ],
+        "discount": 50
+    },
+    {
+        "id": 51,
+        "name": "Teal Blue Flared Skirt",
+        "category": "skirt",
+        "price": 39.97,
+        "originalPrice": 79.97,
+        "image": "images/WhatsApp Image 2026-03-19 at 12.15.12 PM (3).jpeg",
+        "rating": 4.6,
+        "reviews": 257,
+        "badge": "",
+        "description": "A teal blue flared skirt that brings bold color to traditional mix-and-match styling.Traditional festive silhouetteStatement color and border detailingSuitable for celebrations, weddings, and cultural occasions",
+        "sizes": [
+            "Free Size"
+        ],
+        "colors": [
+            "teal blue flared skirt festive"
+        ],
+        "discount": 50
+    },
+    {
+        "id": 52,
+        "name": "Raspberry Pink Flared Skirt",
+        "category": "skirt",
+        "price": 39.97,
+        "originalPrice": 79.97,
+        "image": "images/WhatsApp Image 2026-03-19 at 12.15.11 PM.jpeg",
+        "rating": 4.7,
+        "reviews": 264,
+        "badge": "New",
+        "description": "A raspberry pink flared skirt for vibrant festive outfits and ethnic coordination.Traditional festive silhouetteStatement color and border detailingSuitable for celebrations, weddings, and cultural occasions",
+        "sizes": [
+            "Free Size"
+        ],
+        "colors": [
+            "raspberry pink flared skirt ethnic"
+        ],
+        "discount": 50
     }
 ];
 
@@ -114,27 +1092,44 @@ const PRODUCTS_PER_PAGE = 4;
 
 // ─── INIT ───
 document.addEventListener('DOMContentLoaded', () => {
-    createParticles();
-    renderProducts();
-    renderTestimonialDots();
-    startTestimonialTimer();
+    // Shared initializers (Header/Footer components)
     updateCartUI();
     updateWishlistUI();
     bindNavbarScroll();
     bindScrollTop();
 
-    // Mobile nav
-    document.getElementById('hamburger').addEventListener('click', () => {
-        document.getElementById('nav-links').classList.toggle('open');
-    });
-    // Cart toggle
-    document.getElementById('cart-toggle').addEventListener('click', openCart);
-    // Wishlist toggle
-    document.getElementById('wishlist-toggle').addEventListener('click', openWishlist);
-    // Search toggle
-    document.getElementById('search-toggle').addEventListener('click', toggleSearch);
-    // Search input enter
-    document.getElementById('search-input').addEventListener('keydown', (e) => { if (e.key === 'Enter') performSearch(); });
+    // Context-specific initializers
+    if (document.getElementById('hero-particles')) createParticles();
+    if (document.getElementById('products-grid')) renderProducts();
+    if (document.getElementById('testimonials-slider')) {
+        renderTestimonialDots();
+        startTestimonialTimer();
+    }
+
+    // Mobile nav toggle
+    const hamburger = document.getElementById('hamburger');
+    if (hamburger) {
+        hamburger.addEventListener('click', () => {
+            document.getElementById('nav-links').classList.toggle('open');
+        });
+    }
+
+    // Global Action Listeners (Check existence first to avoid errors)
+    const cartToggle = document.getElementById('cart-toggle');
+    if (cartToggle) cartToggle.addEventListener('click', openCart);
+
+    const wishlistToggle = document.getElementById('wishlist-toggle');
+    if (wishlistToggle) wishlistToggle.addEventListener('click', openWishlist);
+
+    const searchToggle = document.getElementById('search-toggle');
+    if (searchToggle) searchToggle.addEventListener('click', toggleSearch);
+
+    const searchInput = document.getElementById('search-input');
+    if (searchInput) {
+        searchInput.addEventListener('keydown', (e) => {
+            if (e.key === 'Enter') performSearch();
+        });
+    }
 });
 
 // ─── HERO PARTICLES ───
@@ -184,43 +1179,37 @@ function renderProducts() {
 function buildProductCard(p, index) {
     const inWishlist = wishlist.some(w => w.id === p.id);
     const delay = (index % 4) * 0.08;
-    const starStr = '★'.repeat(Math.floor(p.rating)) + (p.rating % 1 >= 0.5 ? '½' : '');
-
-    const imgContent = p.image
-        ? `<img src="${p.image}" alt="${p.name}" loading="lazy" />`
-        : `<div style="width:100%;height:100%;display:flex;align-items:center;justify-content:center;background:linear-gradient(135deg,${p.color}22,${p.color}44);font-size:5rem;">${p.emoji}</div>`;
+    
+    // Determine dynamic badge
+    let badgeHtml = '';
+    if (p.badge) {
+        badgeHtml = `<span class="product-badge ${p.badge.toLowerCase()}">${p.badge}</span>`;
+    } else if (p.discount >= 50) {
+      badgeHtml = `<span class="product-badge sale">SALE ${p.discount}% OFF</span>`;
+    }
 
     return `
     <div class="product-card" style="animation-delay:${delay}s" onclick="openProductModal(${p.id})">
-      <div class="product-img-wrap">
-        ${imgContent}
-        ${p.badge ? `<span class="product-badge ${p.badge.toLowerCase()}">${p.badge}</span>` : ''}
-        <div class="product-actions" onclick="event.stopPropagation()">
-          <button class="action-btn" onclick="toggleWishlist(${p.id})" title="${inWishlist ? 'Remove from Wishlist' : 'Add to Wishlist'}">
-            ${inWishlist ? '❤' : '♡'}
-          </button>
-          <button class="action-btn" onclick="quickAddToCart(${p.id})" title="Add to Cart">🛒</button>
+      <div class="product-img-container">
+        ${badgeHtml}
+        <img src="${p.image}" alt="${p.name}" loading="lazy" />
+        <div class="product-quick-add">
+          <button class="quick-add-btn" onclick="event.stopPropagation(); addToCart(${p.id})">Quick Add +</button>
         </div>
       </div>
       <div class="product-info">
-        <div class="product-category">${getCategoryLabel(p.category)}</div>
+        <span class="product-category">${getCategoryLabel(p.category)}</span>
         <h3 class="product-name">${p.name}</h3>
-        <div class="product-rating">
-          <span class="stars">★★★★${p.rating >= 4.5 ? '★' : '☆'}</span>
-          <span class="rating-count">(${p.reviews})</span>
-        </div>
         <div class="product-price">
           <span class="price-current">$${p.price.toFixed(2)}</span>
-          <span class="price-original">$${p.originalPrice.toFixed(2)}</span>
-          <span class="price-discount">${p.discount}% OFF</span>
+          ${p.originalPrice > p.price ? `<span class="price-original">$${p.originalPrice.toFixed(2)}</span>` : ''}
         </div>
-        <button class="add-to-cart" onclick="event.stopPropagation(); quickAddToCart(${p.id})">Add to Cart 🛍</button>
       </div>
     </div>`;
 }
 
 function getCategoryLabel(cat) {
-    const labels = { lehenga: 'Lehenga Choli', ghagra: 'Ghagra / Chaniya', dupatta: 'Dupatta', jewelry: 'Jewelry', purse: 'Purse & Clutch', watch: 'Ethnic Watch' };
+    const labels = { lehenga: 'Lehenga Choli', ghagra: 'Ghagra / Chaniya', dupatta: 'Dupatta', jewelry: 'Jewelry', purse: 'Purse & Clutch', watch: 'Ethnic Watch', skirt: 'Flared Skirt' };
     return labels[cat] || cat;
 }
 
@@ -245,46 +1234,93 @@ function loadMoreProducts() {
 
 // ─── PRODUCT MODAL ───
 function openProductModal(id) {
-    const p = ALL_PRODUCTS.find(x => x.id === id);
-    if (!p) return;
+    console.log('Opening modal for product ID:', id);
+    const p = ALL_PRODUCTS.find(x => x.id == id);
+    if (!p) {
+        console.error('Product not found for ID:', id);
+        return;
+    }
     const inWishlist = wishlist.some(w => w.id === p.id);
-    const imgContent = p.image
-        ? `<img src="${p.image}" alt="${p.name}" />`
-        : `<div style="width:100%;height:100%;display:flex;align-items:center;justify-content:center;background:linear-gradient(135deg,${p.color}33,${p.color}66);font-size:8rem;">${p.emoji}</div>`;
 
     document.getElementById('modal-content').innerHTML = `
     <div class="modal-inner">
-      <div class="modal-img">${imgContent}</div>
-      <div class="modal-details">
-        <div class="modal-category">${getCategoryLabel(p.category)}</div>
+      <div class="modal-img-column">
+        <img src="${p.image}" alt="${p.name}" />
+      </div>
+      <div class="modal-info-column">
+        <span class="modal-category">${getCategoryLabel(p.category)}</span>
         <h2 class="modal-title">${p.name}</h2>
         <div class="modal-rating">
-          <span style="color:var(--accent)">★★★★${p.rating >= 4.5 ? '★' : '☆'}</span>
-          <span style="color:var(--text-muted)">${p.rating} (${p.reviews} reviews)</span>
+          <span class="stars">★★★★★</span>
+          <span class="rating-text">(${p.reviews} Professional Reviews)</span>
         </div>
         <div class="modal-price">
           <span class="modal-price-current">$${p.price.toFixed(2)}</span>
-          <span class="modal-price-original">$${p.originalPrice.toFixed(2)}</span>
-          <span class="price-discount" style="font-size:0.85rem">${p.discount}% OFF</span>
+          ${p.originalPrice > p.price ? `<span class="modal-price-original">$${p.originalPrice.toFixed(2)}</span>` : ''}
         </div>
-        <p class="modal-desc">${p.description}</p>
-        ${p.sizes.length > 1 ? `
-          <div class="modal-size-label">Select Size:</div>
-          <div class="modal-sizes">
-            ${p.sizes.map((s, i) => `<button class="size-btn ${i === 1 ? 'active' : ''}" onclick="selectSize(this)">${s}</button>`).join('')}
+        
+        <p class="modal-description-brief">
+          Artisanal craftsmanship meets contemporary style in this exquisite ${p.name}. 
+          Perfectly tailored for festive celebrations and special occasions.
+        </p>
+
+        <div class="modal-selection-group">
+          <span class="selection-label">Select Size</span>
+          <div class="size-chips">
+            ${p.sizes.map((s, i) => `
+              <div class="size-chip ${i === 0 ? 'active' : ''}" onclick="selectSizeChip(this)">${s}</div>
+            `).join('')}
           </div>
-        ` : ''}
+        </div>
+
         <div class="modal-actions">
-          <button class="btn-primary full-width" onclick="addToCartFromModal(${p.id})">Add to Cart 🛍</button>
-          <button class="modal-wishlist" onclick="toggleWishlist(${p.id}); this.innerHTML = wishlist.some(w=>w.id===${p.id}) ? '❤ Saved to Wishlist' : '♡ Add to Wishlist'">
-            ${inWishlist ? '❤ Saved to Wishlist' : '♡ Add to Wishlist'}
+          <button class="btn-atc" onclick="addToCartFromModal(${p.id})">Add to Bag</button>
+          <button class="btn-wishlist" onclick="toggleWishlist(${p.id})">
+            ${inWishlist ? 'Saved' : 'Wishlist'}
           </button>
+        </div>
+
+        <div class="modal-tabs">
+          <div class="tab-header">
+            <button class="tab-btn active" onclick="switchTab(this, 'desc')">Description</button>
+            <button class="tab-btn" onclick="switchTab(this, 'details')">Details</button>
+            <button class="tab-btn" onclick="switchTab(this, 'shipping')">Shipping</button>
+          </div>
+          <div id="tab-desc" class="tab-content active">
+            ${p.description}
+          </div>
+          <div id="tab-details" class="tab-content">
+            • Material: Premium Heritage Fabric<br>
+            • Fit: Tailored Elegance<br>
+            • Wash Care: Dry Clean Only<br>
+            • Origin: Handcrafted in India
+          </div>
+          <div id="tab-shipping" class="tab-content">
+             Estimated Delivery: 5 - 7 Business Days.<br>
+             Free worldwide shipping on orders above $12.
+          </div>
         </div>
       </div>
     </div>`;
+    
     document.getElementById('product-modal-overlay').classList.add('active');
     document.getElementById('product-modal').classList.add('active');
     document.body.style.overflow = 'hidden';
+    console.log('Modal elements activated');
+}
+
+function selectSizeChip(el) {
+    el.parentElement.querySelectorAll('.size-chip').forEach(c => c.classList.remove('active'));
+    el.classList.add('active');
+}
+
+function switchTab(btn, tabId) {
+    btn.parentElement.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+    
+    const parent = btn.closest('.modal-info-column');
+    parent.querySelectorAll('.tab-content').forEach(c => c.classList.remove('active'));
+    parent.querySelector('#tab-' + tabId).classList.add('active');
 }
 
 function closeProductModal() {
@@ -435,12 +1471,208 @@ function updateWishlistUI() {
     }
 }
 
-// ─── CHECKOUT ───
+// ─── POLICY NAVIGATION ───
+const POLICIES = {
+  shipping: {
+    title: 'Shipping & Delivery',
+    content: `
+      <p>We take great pride in our handcrafted collections and ensure they reach you in perfect condition. We ship globally from our heritage workshops in India.</p>
+      <h4>Delivery Times</h4>
+      <ul>
+        <li><strong>Standard Shipping:</strong> 5-10 business days.</li>
+        <li><strong>Express Shipping:</strong> 3-5 business days.</li>
+      </ul>
+      <h4>Shipping Rates</h4>
+      <p>Enjoy <strong>Free Standard Shipping</strong> on all orders above $12. For orders below $12, a flat rate of $5 applies.</p>
+    `
+  },
+  returns: {
+    title: 'Returns & Exchanges',
+    content: `
+      <p>Your satisfaction is our priority. If you are not completely satisfied with your purchase, we are here to help.</p>
+      <h4>15-Day Return Policy</h4>
+      <p>Items can be returned within 15 days of delivery. The item must be unused, in the same condition that you received it, and in the original packaging.</p>
+      <h4>Exchanges</h4>
+      <p>We only replace items if they are defective or damaged. If you need to exchange it for the same item, please contact our support team.</p>
+    `
+  },
+  terms: {
+    title: 'Terms of Service',
+    content: `
+      <p>Welcome to Ethnic Elegance. By accessing our website, you agree to comply with our terms and conditions.</p>
+      <h4>Artisanal Variations</h4>
+      <p>Please note that because our products are handcrafted using traditional methods, slight variations in color, weave, and embroidery are expected and celebrated as a mark of authenticity.</p>
+      <h4>Pricing</h4>
+      <p>All prices are subject to change without notice. We reserve the right to modify or discontinue services at any time.</p>
+    `
+  },
+  privacy: {
+    title: 'Privacy Policy',
+    content: `
+      <p>We respect your privacy and are committed to protecting your personal data.</p>
+      <h4>Data Usage</h4>
+      <p>We only collect information necessary to process your orders and provide a personalized shopping experience. We never sell your data to third parties.</p>
+      <h4>Security</h4>
+      <p>Our website uses industry-standard SSL encryption to ensure your payment information and personal details are always secure.</p>
+    `
+  }
+};
+
+function showPolicy(slug) {
+  const policy = POLICIES[slug];
+  if (!policy) return;
+
+  const modal = document.getElementById('product-modal');
+  const overlay = document.getElementById('product-modal-overlay');
+  
+  document.getElementById('modal-content').innerHTML = `
+    <div class="policy-page" style="padding: 60px; width: 100%;">
+      <div style="max-width: 800px; margin: 0 auto;">
+        <h2 style="font-family: var(--font-display); font-size: 2.5rem; margin-bottom: 30px; border-bottom: 1px solid var(--border-light); padding-bottom: 20px;">
+          ${policy.title}
+        </h2>
+        <div class="policy-body" style="line-height: 1.8; color: var(--text-muted);">
+          ${policy.content}
+        </div>
+        <button class="btn-primary" onclick="closeProductModal()" style="margin-top: 40px; padding: 14px 40px;">Close</button>
+      </div>
+    </div>
+  `;
+  
+  overlay.classList.add('active');
+  modal.classList.add('active');
+  document.body.style.overflow = 'hidden';
+}
+// ─── CHECKOUT SIMULATOR ───
 function checkout() {
-    showToast('🎉 Redirecting to checkout... (Demo Mode)');
-    setTimeout(() => {
-        alert('Thank you for shopping at Ethnic Elegance! 🌸\n\nFor orders or inquiries, please contact us on:\nWhatsApp: +91 98765 43210\nInstagram: @ethenic_elegance44\n\nWe look forward to serving you!');
-    }, 800);
+    closeAll();
+    const modal = document.getElementById('product-modal');
+    const overlay = document.getElementById('product-modal-overlay');
+    
+    document.getElementById('modal-content').innerHTML = `
+      <div class="checkout-simulator" style="padding: 60px; width: 100%;">
+        <div style="max-width: 600px; margin: 0 auto;">
+          <h2 style="font-family: var(--font-display); font-size: 2rem; margin-bottom: 10px;">Secure Checkout</h2>
+          <p style="color: var(--text-muted); margin-bottom: 40px;">Step 1 of 3: Shipping Information</p>
+          
+          <form id="checkout-form" onsubmit="event.preventDefault(); nextCheckoutStep(2)">
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin-bottom: 20px;">
+              <div class="form-group">
+                <label class="selection-label">First Name</label>
+                <input type="text" required style="width:100%; padding:14px; border:1px solid var(--border);">
+              </div>
+              <div class="form-group">
+                <label class="selection-label">Last Name</label>
+                <input type="text" required style="width:100%; padding:14px; border:1px solid var(--border);">
+              </div>
+            </div>
+            <div class="form-group" style="margin-bottom: 20px;">
+              <label class="selection-label">Email Address</label>
+              <input type="email" required style="width:100%; padding:14px; border:1px solid var(--border);">
+            </div>
+            <div class="form-group" style="margin-bottom: 20px;">
+              <label class="selection-label">Shipping Address</label>
+              <input type="text" required style="width:100%; padding:14px; border:1px solid var(--border);">
+            </div>
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin-bottom: 40px;">
+              <div class="form-group">
+                <label class="selection-label">City</label>
+                <input type="text" required style="width:100%; padding:14px; border:1px solid var(--border);">
+              </div>
+              <div class="form-group">
+                <label class="selection-label">Postal Code</label>
+                <input type="text" required style="width:100%; padding:14px; border:1px solid var(--border);">
+              </div>
+            </div>
+            <button class="btn-primary full-width" style="padding: 20px;">Continue to Shipping</button>
+          </form>
+        </div>
+      </div>
+    `;
+    
+    overlay.classList.add('active');
+    modal.classList.add('active');
+    document.body.style.overflow = 'hidden';
+}
+
+function nextCheckoutStep(step) {
+  const content = document.getElementById('modal-content');
+  if (step === 2) {
+    content.innerHTML = `
+      <div class="checkout-simulator" style="padding: 60px; width: 100%;">
+        <div style="max-width: 600px; margin: 0 auto;">
+          <h2 style="font-family: var(--font-display); font-size: 2rem; margin-bottom: 10px;">Shipping Method</h2>
+          <p style="color: var(--text-muted); margin-bottom: 40px;">Step 2 of 3: Choose your speed</p>
+          
+          <div style="border: 1.5px solid var(--primary); padding: 20px; margin-bottom: 20px; display: flex; justify-content: space-between; align-items: center;">
+            <div>
+              <strong style="display: block;">Standard Delivery</strong>
+              <span style="font-size: 0.8rem; color: var(--text-muted);">5-7 Business Days</span>
+            </div>
+            <strong>FREE</strong>
+          </div>
+          <div style="border: 1px solid var(--border); padding: 20px; margin-bottom: 40px; display: flex; justify-content: space-between; align-items: center; cursor: pointer;">
+            <div>
+              <strong style="display: block;">Express Shipping</strong>
+              <span style="font-size: 0.8rem; color: var(--text-muted);">2-3 Business Days</span>
+            </div>
+            <strong>$12.00</strong>
+          </div>
+          
+          <button class="btn-primary full-width" style="padding: 20px;" onclick="nextCheckoutStep(3)">Continue to Payment</button>
+        </div>
+      </div>
+    `;
+  } else if (step === 3) {
+    content.innerHTML = `
+      <div class="checkout-simulator" style="padding: 60px; width: 1100px;">
+        <div style="max-width: 600px; margin: 0 auto;">
+          <h2 style="font-family: var(--font-display); font-size: 2rem; margin-bottom: 10px;">Payment Information</h2>
+          <p style="color: var(--text-muted); margin-bottom: 40px;">Step 3 of 3: Secure Payment</p>
+          
+          <div style="background: var(--bg-alt); padding: 20px; border-radius: 4px; margin-bottom: 30px; display: grid; gap: 15px;">
+            <div class="form-group">
+              <label class="selection-label">Card Number</label>
+              <input type="text" placeholder="XXXX XXXX XXXX XXXX" style="width:100%; padding:14px; border:1px solid var(--border);">
+            </div>
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px;">
+              <div class="form-group">
+                <label class="selection-label">Expiry Date</label>
+                <input type="text" placeholder="MM/YY" style="width:100%; padding:14px; border:1px solid var(--border);">
+              </div>
+              <div class="form-group">
+                <label class="selection-label">CVV</label>
+                <input type="text" placeholder="XXX" style="width:100%; padding:14px; border:1px solid var(--border);">
+              </div>
+            </div>
+          </div>
+          
+          <button class="btn-primary full-width" style="padding: 20px;" onclick="finalizeCheckout()">Complete Purchase</button>
+        </div>
+      </div>
+    `;
+  }
+}
+
+function finalizeCheckout() {
+    document.getElementById('modal-content').innerHTML = `
+      <div style="padding: 80px 40px; text-align: center; width: 100%;">
+        <div style="font-size: 4rem; margin-bottom: 24px;">✨</div>
+        <h2 style="font-family: var(--font-display); font-size: 2.5rem; margin-bottom: 16px;">Order Confirmed!</h2>
+        <p style="color: var(--text-muted); margin-bottom: 40px; max-width: 500px; margin-left: auto; margin-right: auto;">
+          Thank you for choosing Ethnic Elegance. We've received your order and are preparing your handcrafted treasures.
+        </p>
+        <div style="background: var(--bg-alt); padding: 24px; border-radius: 8px; margin-bottom: 40px; display: inline-block;">
+          <span style="font-size: 0.8rem; text-transform: uppercase; letter-spacing: 1px; color: var(--text-light);">Order Number</span>
+          <div style="font-weight: 700; font-size: 1.2rem; color: var(--primary);">#EE-${Math.floor(Math.random()*90000) + 10000}</div>
+        </div>
+        <br>
+        <button class="btn-primary" onclick="closeProductModal(); location.reload();" style="padding: 16px 60px;">Return Home</button>
+      </div>
+    `;
+    cart = [];
+    saveCart();
+    updateCartUI();
 }
 
 // ─── SEARCH ───
