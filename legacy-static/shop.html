@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Shop – Ethnic Elegance | Premium Ethnic Fashion</title>
+  <meta name="description" content="Shop premium ethnic fashion for weddings, festivals, and special occasions." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="announcement-bar">✦ Contact us for pricing, shipping, and bespoke support ✦</div>
+  <header class="navbar inner-page" id="navbar">
+    <div class="nav-inner container">
+      <div class="nav-logo" onclick="location.href='index.html'">
+        <div class="logo-text"><span class="logo-main">ETHNIC</span><span class="logo-accent">ELEGANCE</span></div>
+      </div>
+      <nav class="nav-links" id="nav-links">
+        <a href="index.html" class="nav-link">Home</a>
+        <div class="nav-item">
+          <a href="shop.html" class="nav-link active">Shop</a>
+          <div class="nav-dropdown">
+            <a href="shop.html?cat=women">Women</a>
+            <a href="shop.html?cat=men">Men</a>
+            <a href="shop.html?cat=kids">Kids</a>
+            <a href="shop.html?cat=bridal">Bridal</a>
+            <a href="shop.html?cat=accessories">Accessories</a>
+          </div>
+        </div>
+        <div class="nav-item">
+          <a href="collections.html" class="nav-link">Collections</a>
+          <div class="nav-dropdown">
+            <a href="shop.html?collection=wedding">Wedding</a>
+            <a href="shop.html?collection=festive">Festive</a>
+            <a href="shop.html?collection=party">Party Wear</a>
+            <a href="shop.html?collection=casual">Casual</a>
+          </div>
+        </div>
+        <a href="shop.html?filter=new" class="nav-link">New Arrivals</a>
+        <a href="shop.html?filter=bestseller" class="nav-link">Best Sellers</a>
+        <a href="lookbook.html" class="nav-link">Lookbook</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="faq.html" class="nav-link">FAQ</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </nav>
+      <div class="nav-actions">
+        <button class="nav-btn" id="search-toggle"><svg width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg></button>
+        <button class="nav-btn" id="wishlist-toggle"><svg width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg><span class="badge" id="wishlist-count">0</span></button>
+        <button class="nav-btn" id="cart-toggle"><svg width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 0 1-8 0"/></svg><span class="badge" id="cart-count">0</span></button>
+        <button class="hamburger" id="hamburger"><span></span><span></span><span></span></button>
+      </div>
+    </div>
+  </header>
+
+  <div class="search-overlay" id="search-overlay">
+    <button class="search-close" onclick="closeSearch()">✕</button>
+    <div class="search-box">
+      <input type="text" id="search-input" placeholder="Search collections, occasions, styles..." />
+      <button class="search-submit" onclick="performSearch()">Search</button>
+    </div>
+  </div>
+
+  <section class="page-header">
+    <div class="container">
+      <h1 id="shop-title">Shop Collection</h1>
+      <p id="shop-subtitle">Premium ethnic fashion curated for every celebration</p>
+    </div>
+  </section>
+
+  <main class="container shop-layout">
+    <aside class="shop-sidebar">
+      <div class="filter-group">
+        <h4>Category</h4>
+        <div class="filter-list">
+          <label><input type="radio" name="cat" checked onclick="filterByCategory('all')"> All</label>
+          <label><input type="radio" name="cat" onclick="filterByCategory('women')"> Women's Wear</label>
+          <label><input type="radio" name="cat" onclick="filterByCategory('lehenga')"> Lehenga Choli</label>
+          <label><input type="radio" name="cat" onclick="filterByCategory('ghagra')"> Ghagra Choli</label>
+          <label><input type="radio" name="cat" onclick="filterByCategory('skirt')"> Flared Skirts</label>
+        </div>
+      </div>
+      <div class="filter-group">
+        <h4>Collection</h4>
+        <div class="filter-list">
+          <label><input type="radio" name="collection" onclick="filterByCollection('wedding')"> Wedding</label>
+          <label><input type="radio" name="collection" onclick="filterByCollection('festive')"> Festive</label>
+          <label><input type="radio" name="collection" onclick="filterByCollection('party')"> Party Wear</label>
+          <label><input type="radio" name="collection" onclick="filterByCollection('casual')"> Casual</label>
+        </div>
+      </div>
+      <div class="filter-group">
+        <h4>Highlight</h4>
+        <div class="filter-list">
+          <label><input type="radio" name="highlight" onclick="filterByCategory('new')"> New Arrivals</label>
+          <label><input type="radio" name="highlight" onclick="filterByCategory('bestseller')"> Best Sellers</label>
+        </div>
+      </div>
+      <div class="filter-group">
+        <h4>Occasion</h4>
+        <div class="filter-list">
+          <label><input type="radio" name="occasion" onclick="filterByOccasion('wedding-guest')"> Wedding Guest</label>
+          <label><input type="radio" name="occasion" onclick="filterByOccasion('bride')"> Bride</label>
+          <label><input type="radio" name="occasion" onclick="filterByOccasion('diwali')"> Diwali</label>
+          <label><input type="radio" name="occasion" onclick="filterByOccasion('navratri')"> Navratri</label>
+          <label><input type="radio" name="occasion" onclick="filterByOccasion('reception')"> Reception</label>
+        </div>
+      </div>
+    </aside>
+
+    <section>
+      <div class="products-grid" id="products-grid"></div>
+      <div class="load-more-wrap" style="text-align: center; margin-top: 40px;">
+        <button class="btn-outline" id="load-more-btn" onclick="loadMoreProducts()">Load More</button>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-bottom" style="border:none;padding:40px 0;">
+      <p>&copy; 2026 Ethnic Elegance. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <div class="overlay" id="overlay" onclick="closeAll()"></div>
+  <div class="cart-drawer" id="cart-drawer">
+    <div class="drawer-header"><h3>Your Bag</h3><button class="close-drawer" onclick="closeAll()">✕</button></div>
+    <div class="cart-items" id="cart-items"><div class="cart-empty" id="cart-empty"><span>🛍</span><p>Your bag is empty</p></div></div>
+    <div class="cart-footer" id="cart-footer" style="display:none;">
+      <div class="cart-total"><span>Total:</span><span id="cart-total-amount">$0</span></div>
+      <button class="btn-primary full-width" onclick="checkout()">Checkout</button>
+    </div>
+  </div>
+  <div class="wishlist-drawer" id="wishlist-drawer">
+    <div class="drawer-header"><h3>Your Wishlist</h3><button class="close-drawer" onclick="closeAll()">✕</button></div>
+    <div class="wishlist-items" id="wishlist-items"></div>
+  </div>
+  <div class="product-modal-overlay" id="product-modal-overlay" onclick="closeProductModal()"></div>
+  <div class="product-modal" id="product-modal"><button class="modal-close" onclick="closeProductModal()">✕</button><div class="modal-content" id="modal-content"></div></div>
+  <div class="toast" id="toast"></div>
+
+  <script src="app.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const titles = {
+        new: ['New Arrivals', 'Fresh styles for the season ahead'],
+        bestseller: ['Best Sellers', 'The pieces our customers love most'],
+        women: ['Women\'s Wear', 'Elegant ethnic fashion for every celebration'],
+        wedding: ['Wedding Collection', 'Exquisite ensembles for your special day'],
+        festive: ['Festive Collection', 'Vibrant styles for every celebration'],
+        party: ['Party Wear', 'Statement pieces for evening occasions'],
+        casual: ['Everyday Collection', 'Effortless elegance for daily wear'],
+      };
+      const params = new URLSearchParams(window.location.search);
+      const key = params.get('filter') || params.get('collection') || params.get('cat') || params.get('occasion');
+      if (key && titles[key]) {
+        document.getElementById('shop-title').textContent = titles[key][0];
+        document.getElementById('shop-subtitle').textContent = titles[key][1];
+      }
+      if (params.get('q')) {
+        document.getElementById('search-input').value = params.get('q');
+        renderProducts();
+      }
+    });
+  </script>
+</body>
+</html>

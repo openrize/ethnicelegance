@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ethnic Elegance | Premium Ethnic Fashion for Every Celebration</title>
+  <meta name="description" content="Shop premium ethnic fashion for weddings, festivals, and special occasions. Discover elegant styles crafted for timeless celebrations." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div class="announcement-bar">✦ Contact us for pricing, shipping, and bespoke support ✦</div>
+
+  <header class="navbar" id="navbar">
+    <div class="nav-inner container">
+      <button class="hamburger nav-btn" id="hamburger" aria-label="Menu"><span></span><span></span><span></span></button>
+
+      <div class="nav-logo" onclick="location.href='index.html'">
+        <div class="logo-brand">✦ Ethnic<em class="gold">Elegance</em></div>
+        <span class="logo-sub">Royal Indian Heritage</span>
+      </div>
+
+      <nav class="nav-links" id="nav-links">
+        <a href="index.html" class="nav-link active">Home</a>
+        <a href="shop.html" class="nav-link">Shop All</a>
+        <a href="shop.html?cat=women" class="nav-link">Womenswear</a>
+        <a href="shop.html?cat=men" class="nav-link">Menswear</a>
+        <a href="shop.html?cat=accessories" class="nav-link">Accessories</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </nav>
+
+      <div class="nav-actions">
+        <button class="nav-btn" id="search-toggle" aria-label="Search">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+        </button>
+        <button class="nav-btn" id="wishlist-toggle" aria-label="Wishlist">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+          <span class="badge" id="wishlist-count">0</span>
+        </button>
+        <button class="nav-btn" id="cart-toggle" aria-label="Cart">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>
+          <span class="badge" id="cart-count">0</span>
+        </button>
+        <a href="tel:+12243779043" class="btn-wine" style="display:none;padding:10px 18px;" id="concierge-btn">Concierge</a>
+      </div>
+    </div>
+  </header>
+
+  <div class="search-overlay" id="search-overlay">
+    <button class="search-close" onclick="closeSearch()">✕</button>
+    <div class="search-box">
+      <input type="text" id="search-input" placeholder="Search heritage pieces..." />
+      <button class="search-submit" onclick="performSearch()">Search</button>
+    </div>
+  </div>
+
+  <!-- HERO -->
+  <section class="hero" id="home">
+    <div class="hero-bg">
+      <img src="images/hero-banner.png" alt="Premium ethnic fashion" class="hero-img">
+    </div>
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <div class="hero-pill">✦ Celebrate Every Occasion ✦</div>
+      <h1 class="hero-title">Elegance That Celebrates<br><em>Every Tradition</em></h1>
+      <p class="hero-desc">Discover thoughtfully curated ethnic fashion designed for weddings, festivals, celebrations, and everyday elegance.</p>
+      <div class="hero-cta">
+        <a href="shop.html" class="btn-primary">Shop Collection</a>
+        <a href="shop.html?filter=new" class="btn-secondary">New Arrivals</a>
+      </div>
+    </div>
+    <div class="hero-scroll"><div class="hero-scroll-line"></div><span>Scroll</span></div>
+  </section>
+
+  <!-- CONCIERGE -->
+  <section class="concierge-strip">
+    <div class="container concierge-inner">
+      <div>
+        <p class="concierge-label">Concierge First Experience</p>
+        <p class="concierge-text">Talk to our team for pricing, styling, and inventory guidance before you reserve.</p>
+      </div>
+      <div class="concierge-actions">
+        <a href="tel:+12243779043" class="btn-wine">Call +1 (224) 377-9043</a>
+        <a href="contact.html" class="btn-outline" style="border-color:var(--wine);color:var(--wine);">Email Us</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- TRUST -->
+  <section class="trust-strip">
+    <div class="container trust-grid">
+      <div class="trust-item"><span class="trust-icon">◆</span><span>Pricing shared by concierge</span></div>
+      <div class="trust-item"><span class="trust-icon">↺</span><span>Complimentary Resizing</span></div>
+      <div class="trust-item"><span class="trust-icon">✓</span><span>Authenticated Artisan Pieces</span></div>
+      <div class="trust-item"><span class="trust-icon">✦</span><span>Premium Heritage Fabrics</span></div>
+    </div>
+  </section>
+
+  <!-- COLLECTIONS MOSAIC -->
+  <section class="collections-section reveal" id="collections">
+    <div class="container">
+      <div class="text-center" style="margin-bottom:56px;">
+        <span class="section-eyebrow">Discover</span>
+        <h2 class="section-title">Our Collections</h2>
+      </div>
+      <div class="collection-mosaic">
+        <div class="mosaic-main" onclick="location.href='shop.html?cat=women'">
+          <img src="images/WhatsApp Image 2026-04-08 at 12.58.32 PM.jpeg" alt="Womenswear">
+          <div class="mosaic-overlay">
+            <span class="mosaic-eyebrow">Handcrafted</span>
+            <h3 class="mosaic-title">Womenswear</h3>
+            <span class="mosaic-btn">Shop Collection</span>
+          </div>
+        </div>
+        <div class="mosaic-side">
+          <div class="mosaic-half" onclick="location.href='shop.html?cat=men'">
+            <img src="images/WhatsApp Image 2026-04-08 at 12.58.57 PM.jpeg" alt="Menswear">
+            <div class="mosaic-overlay">
+              <h3 class="mosaic-title" style="font-size:2rem;">Menswear</h3>
+              <span class="mosaic-btn">Explore</span>
+            </div>
+          </div>
+          <div class="mosaic-half" onclick="location.href='shop.html?cat=accessories'">
+            <img src="images/WhatsApp Image 2026-04-08 at 12.58.57 PM (1).jpeg" alt="Accessories">
+            <div class="mosaic-overlay">
+              <h3 class="mosaic-title" style="font-size:2rem;">Accessories</h3>
+              <span class="mosaic-btn">Discover</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SIGNATURE PIECES -->
+  <section class="products-section reveal" id="products">
+    <div class="container">
+      <div class="text-center" style="margin-bottom:48px;">
+        <span class="section-eyebrow">Editor's Choice</span>
+        <h2 class="section-title">Signature Pieces</h2>
+      </div>
+      <div class="products-grid" id="best-sellers-grid"></div>
+      <div class="load-more-wrap"><a href="shop.html" class="btn-outline">View All Collection →</a></div>
+    </div>
+  </section>
+
+  <!-- NEW ARRIVALS -->
+  <section class="products-section reveal" id="new-arrivals" style="background:var(--champagne);">
+    <div class="container">
+      <div class="text-center" style="margin-bottom:48px;">
+        <span class="section-eyebrow">Just In</span>
+        <h2 class="section-title">New Arrivals</h2>
+      </div>
+      <div class="products-grid" id="new-arrivals-grid"></div>
+      <div class="load-more-wrap"><a href="shop.html?filter=new" class="btn-outline">See All New →</a></div>
+    </div>
+  </section>
+
+  <!-- OCCASION SHOPPING -->
+  <section class="occasion-section reveal" id="occasions">
+    <div class="container">
+      <div class="text-center" style="margin-bottom:48px;">
+        <span class="section-eyebrow">Shop by Occasion</span>
+        <h2 class="section-title">Dress for the Moment</h2>
+        <p class="section-desc">Find the perfect look for weddings, festivals, and every celebration</p>
+      </div>
+      <div class="occasion-grid">
+        <div class="occasion-card" onclick="location.href='shop.html?occasion=wedding-guest'"><h4>Wedding Guest</h4><p>Ceremonies &amp; receptions</p></div>
+        <div class="occasion-card" onclick="location.href='shop.html?occasion=bride'"><h4>Bride</h4><p>Bridal statement pieces</p></div>
+        <div class="occasion-card" onclick="location.href='shop.html?occasion=diwali'"><h4>Diwali</h4><p>Festive celebratory styles</p></div>
+        <div class="occasion-card" onclick="location.href='shop.html?occasion=navratri'"><h4>Navratri</h4><p>Chaniya choli &amp; ghagra</p></div>
+        <div class="occasion-card" onclick="location.href='shop.html?occasion=reception'"><h4>Reception</h4><p>Evening glamour</p></div>
+        <div class="occasion-card" onclick="location.href='shop.html?occasion=engagement'"><h4>Engagement</h4><p>Romantic occasion wear</p></div>
+        <div class="occasion-card" onclick="location.href='shop.html?occasion=eid'"><h4>Eid</h4><p>Refined ethnic elegance</p></div>
+        <div class="occasion-card" onclick="location.href='shop.html?collection=wedding'"><h4>Groom</h4><p>Sherwanis &amp; kurta sets</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHY US -->
+  <section class="why-section reveal">
+    <div class="container">
+      <div class="text-center" style="margin-bottom:48px;">
+        <span class="section-eyebrow">The Difference</span>
+        <h2 class="section-title">Why Ethnic Elegance</h2>
+      </div>
+      <div class="why-grid">
+        <div class="why-card"><div class="why-icon">◆</div><h4>Premium Fabrics</h4><p>Hand-selected heritage textiles from master weavers across India</p></div>
+        <div class="why-card"><div class="why-icon">◇</div><h4>Modern Designs</h4><p>Contemporary silhouettes rooted in timeless tradition</p></div>
+        <div class="why-card"><div class="why-icon">✦</div><h4>Artisan Craft</h4><p>Generational embroidery and zari techniques</p></div>
+        <div class="why-card"><div class="why-icon">✈</div><h4>Worldwide Shipping</h4><p>Delivered wherever you celebrate</p></div>
+        <div class="why-card"><div class="why-icon">◈</div><h4>Secure Checkout</h4><p>SSL-encrypted payments</p></div>
+        <div class="why-card"><div class="why-icon">↺</div><h4>Easy Returns</h4><p>15-day hassle-free returns</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CUSTOMER GALLERY -->
+  <section class="gallery-section reveal" id="gallery">
+    <div class="container">
+      <div class="text-center" style="margin-bottom:48px;">
+        <span class="section-eyebrow">Real Moments</span>
+        <h2 class="section-title">Styled by Our Customers</h2>
+      </div>
+      <div class="gallery-grid">
+        <div class="gallery-item"><img src="images/WhatsApp Image 2026-03-19 at 12.15.09 PM.jpeg" alt="Customer" loading="lazy"><div class="gallery-overlay">@priya_celebrates</div></div>
+        <div class="gallery-item"><img src="images/WhatsApp Image 2026-03-19 at 12.15.07 PM (1).jpeg" alt="Customer" loading="lazy"><div class="gallery-overlay">@meera_festive</div></div>
+        <div class="gallery-item"><img src="images/WhatsApp Image 2026-03-19 at 12.15.04 PM (2).jpeg" alt="Customer" loading="lazy"><div class="gallery-overlay">@ananya_weds</div></div>
+        <div class="gallery-item"><img src="images/WhatsApp Image 2026-03-19 at 12.15.03 PM (2).jpeg" alt="Customer" loading="lazy"><div class="gallery-overlay">@divya_looks</div></div>
+        <div class="gallery-item"><img src="images/WhatsApp Image 2026-03-19 at 12.15.02 PM.jpeg" alt="Customer" loading="lazy"><div class="gallery-overlay">@kavya_style</div></div>
+        <div class="gallery-item"><img src="images/WhatsApp Image 2026-03-19 at 12.14.50 PM (2).jpeg" alt="Customer" loading="lazy"><div class="gallery-overlay">@riya_ethnic</div></div>
+      </div>
+      <div class="text-center" style="margin-top:40px;"><a href="lookbook.html" class="btn-outline">View Lookbook →</a></div>
+    </div>
+  </section>
+
+  <!-- REVIEWS -->
+  <section class="reviews-section reveal" id="reviews">
+    <div class="container">
+      <div class="text-center" style="margin-bottom:48px;">
+        <span class="section-eyebrow">Heritage Circle Reviews</span>
+        <h2 class="section-title">What Our Collectors Say</h2>
+      </div>
+      <div class="reviews-grid">
+        <div class="review-card">
+          <div class="review-quote">"</div>
+          <div class="review-stars">★★★★★</div>
+          <p class="review-text">The lehenga I wore for my sister's wedding felt absolutely regal. Premium fabric, perfect drape — I felt confident all evening.</p>
+          <div class="review-author">
+            <div class="review-avatar">PK</div>
+            <div class="review-meta"><strong>Priya Kapoor</strong><span>Verified Collector</span><div class="verified-badge">✓ Verified Purchase</div></div>
+          </div>
+        </div>
+        <div class="review-card">
+          <div class="review-quote">"</div>
+          <div class="review-stars">★★★★★</div>
+          <p class="review-text">Museum-quality hand-stitching and beautiful packaging with an artisan note. This isn't just clothing — it's an experience.</p>
+          <div class="review-author">
+            <div class="review-avatar">AS</div>
+            <div class="review-meta"><strong>Ananya Singh</strong><span>Heritage Enthusiast</span><div class="verified-badge">✓ Verified Purchase</div></div>
+          </div>
+        </div>
+        <div class="review-card">
+          <div class="review-quote">"</div>
+          <div class="review-stars">★★★★★</div>
+          <p class="review-text">Finally found a brand that balances tradition with modern elegance. My engagement outfit received countless compliments.</p>
+          <div class="review-author">
+            <div class="review-avatar">KM</div>
+            <div class="review-meta"><strong>Kavita Mehra</strong><span>Loyal Customer</span><div class="verified-badge">✓ Verified Purchase</div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- NEWSLETTER -->
+  <section class="reveal" id="newsletter">
+    <div class="newsletter-panel">
+      <span class="section-eyebrow">Exclusive Access</span>
+      <h2 class="section-title">Join the Heritage Circle</h2>
+      <p class="section-desc">Early access to limited collections and stories from our artisans. No spam — only heritage.</p>
+      <form class="newsletter-form" onsubmit="submitNewsletter(event)">
+        <input type="email" placeholder="Your email address" required>
+        <button type="submit">Subscribe</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top">
+        <div>
+          <div class="footer-logo">Ethnic<em>Elegance</em></div>
+          <p class="footer-about">Celebrate every occasion with elegant ethnic fashion. Premium, authentic pieces crafted for weddings, festivals, and life's most memorable moments.</p>
+        </div>
+        <div class="footer-links">
+          <div class="footer-col">
+            <h4>Shop</h4>
+            <a href="shop.html?filter=new">New Arrivals</a>
+            <a href="shop.html?cat=women">Women's</a>
+            <a href="shop.html?cat=men">Men's</a>
+            <a href="shop.html?cat=accessories">Accessories</a>
+            <a href="shop.html?filter=bestseller">Best Sellers</a>
+          </div>
+          <div class="footer-col">
+            <h4>Collections</h4>
+            <a href="shop.html?collection=wedding">Wedding</a>
+            <a href="shop.html?collection=festive">Festive</a>
+            <a href="shop.html?collection=party">Party Wear</a>
+            <a href="lookbook.html">Lookbook</a>
+          </div>
+          <div class="footer-col">
+            <h4>Help</h4>
+            <a href="about.html">About</a>
+            <a href="faq.html">FAQ</a>
+            <a href="contact.html">Contact</a>
+            <a href="#" onclick="showPolicy('shipping');return false;">Shipping</a>
+            <a href="#" onclick="showPolicy('returns');return false;">Returns</a>
+          </div>
+        </div>
+        <div>
+          <h4 style="font-family:var(--font-display);font-style:italic;margin-bottom:16px;">Newsletter</h4>
+          <form class="newsletter-form" style="border-color:rgba(255,255,255,0.2);" onsubmit="submitNewsletter(event)">
+            <input type="email" placeholder="email@example.com" required>
+            <button type="submit">Join</button>
+          </form>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Ethnic Elegance. All Rights Reserved.</p>
+        <span>VISA · MC · AMEX · PAYPAL</span>
+      </div>
+    </div>
+  </footer>
+
+  <div class="overlay" id="overlay" onclick="closeAll()"></div>
+  <div class="cart-drawer" id="cart-drawer">
+    <div class="drawer-header"><h3>Your Bag</h3><button class="close-drawer" onclick="closeAll()">✕</button></div>
+    <div class="cart-items" id="cart-items"><div class="cart-empty" id="cart-empty"><p>Your bag is empty</p><button class="btn-primary" onclick="closeAll();location.href='shop.html'">Shop Collection</button></div></div>
+    <div class="cart-footer" id="cart-footer" style="display:none;">
+      <div class="cart-total"><span>Total</span><span id="cart-total-amount">$0</span></div>
+      <button class="btn-primary full-width" onclick="checkout()">Checkout</button>
+    </div>
+  </div>
+  <div class="wishlist-drawer" id="wishlist-drawer">
+    <div class="drawer-header"><h3>Wishlist</h3><button class="close-drawer" onclick="closeAll()">✕</button></div>
+    <div class="wishlist-items" id="wishlist-items"></div>
+  </div>
+  <div class="product-modal-overlay" id="product-modal-overlay" onclick="closeProductModal()"></div>
+  <div class="product-modal" id="product-modal"><button class="modal-close" onclick="closeProductModal()">✕</button><div class="modal-content" id="modal-content"></div></div>
+  <div class="toast" id="toast"></div>
+  <button class="back-to-top" id="back-to-top" onclick="window.scrollTo({top:0,behavior:'smooth'})">↑</button>
+
+  <script src="app.js"></script>
+</body>
+</html>

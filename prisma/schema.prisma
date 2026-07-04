@@ -1,0 +1,41 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+}
+
+model Order {
+  id              String   @id
+  createdAt       DateTime @default(now())
+  updatedAt       DateTime @updatedAt
+  status          String
+  customerEmail   String?
+  currency        String
+  subtotal        Float
+  stripeSessionId String?  @unique
+  itemsJson       String
+}
+
+model ContactLead {
+  id               String   @id @default(cuid())
+  createdAt        DateTime @default(now())
+  name             String
+  email            String
+  phone            String?
+  subject          String
+  message          String
+  preferredContact String?
+  sourcePage       String?
+  productId        Int?
+}
+
+model EngagementEvent {
+  id        String   @id @default(cuid())
+  createdAt DateTime @default(now())
+  eventType String
+  channel   String
+  location  String?
+  productId Int?
+}

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FAQ – Ethnic Elegance | Help &amp; Support</title>
+  <meta name="description" content="Frequently asked questions about sizing, shipping, returns, and ordering from Ethnic Elegance." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="navbar inner-page" id="navbar">
+    <div class="nav-inner container">
+      <div class="nav-logo" onclick="location.href='index.html'">
+        <div class="logo-text"><span class="logo-main">ETHNIC</span><span class="logo-accent">ELEGANCE</span></div>
+      </div>
+      <nav class="nav-links" id="nav-links">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="shop.html" class="nav-link">Shop</a>
+        <a href="collections.html" class="nav-link">Collections</a>
+        <a href="lookbook.html" class="nav-link">Lookbook</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="faq.html" class="nav-link active">FAQ</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </nav>
+      <div class="nav-actions">
+        <button class="nav-btn" id="cart-toggle"><svg width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 0 1-8 0"/></svg><span class="badge" id="cart-count">0</span></button>
+        <button class="hamburger" id="hamburger"><span></span><span></span><span></span></button>
+      </div>
+    </div>
+  </header>
+
+  <section class="page-header">
+    <div class="container">
+      <h1>Frequently Asked Questions</h1>
+      <p>Everything you need to know about shopping with Ethnic Elegance</p>
+    </div>
+  </section>
+
+  <section style="padding: 80px 0;">
+    <div class="container">
+      <div class="faq-list">
+        <div class="faq-item">
+          <button class="faq-question" onclick="toggleFaq(this)">How do I find my size? <span>+</span></button>
+          <div class="faq-answer"><p>Each product page includes a size guide. Standard sizes run S (34–36"), M (38–40"), L (42–44"), and XL (46–48"). Flared skirts are typically free size. If you're between sizes, we recommend sizing up for lehengas and fitted ensembles.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question" onclick="toggleFaq(this)">How long does shipping take? <span>+</span></button>
+          <div class="faq-answer"><p>Standard delivery takes 5–7 business days worldwide. Express shipping (2–3 business days) is available at checkout. Complimentary shipping applies on orders above $150.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question" onclick="toggleFaq(this)">What is your return policy? <span>+</span></button>
+          <div class="faq-answer"><p>We offer hassle-free 15-day returns on unworn items in original packaging. Because our pieces are handcrafted, slight variations in color and weave are natural and celebrated as marks of authenticity.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question" onclick="toggleFaq(this)">Are the fabrics premium quality? <span>+</span></button>
+          <div class="faq-answer"><p>Yes. Every piece is made from hand-selected heritage fabrics sourced directly from artisan clusters across India. We prioritize premium silks, cottons, and embroidered textiles crafted for special occasions.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question" onclick="toggleFaq(this)">Can I shop for a specific occasion? <span>+</span></button>
+          <div class="faq-answer"><p>Absolutely. Browse by occasion — wedding guest, bride, groom, Diwali, Navratri, Eid, reception, or engagement — from our homepage or shop filters to find looks curated for your celebration.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question" onclick="toggleFaq(this)">How do I care for my outfit? <span>+</span></button>
+          <div class="faq-answer"><p>Most pieces require dry cleaning only. Store in a breathable garment bag away from direct sunlight. Detailed fabric and care instructions are listed on every product page.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question" onclick="toggleFaq(this)">Do you ship internationally? <span>+</span></button>
+          <div class="faq-answer"><p>Yes, we ship worldwide. International orders are dispatched from our heritage workshops in India with full tracking provided via email.</p></div>
+        </div>
+      </div>
+      <div class="text-center" style="margin-top:60px;">
+        <p style="color:var(--text-muted);margin-bottom:20px;">Still have questions?</p>
+        <a href="contact.html" class="btn-primary">Contact Us</a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container footer-bottom" style="border:none;padding:40px 0;"><p>&copy; 2026 Ethnic Elegance. All Rights Reserved.</p></div>
+  </footer>
+  <div class="toast" id="toast"></div>
+  <script src="app.js"></script>
+</body>
+</html>
